@@ -1,43 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap" rel="stylesheet">
-	<title>Test task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="src/css/style.min.css">
+    <link rel="stylesheet" media="(max-width: 576px)" href="src/css/extra_small.css"/>
+    <link rel="stylesheet" media="(min-width: 576px) and (max-width: 768px)" href="src/css/small.css"/>
+    <link rel="stylesheet" media="(min-width: 768px) and (max-width: 997px)" href="src/css/medium.css"/>
+    <link rel="stylesheet" media="(min-width: 997px) and (max-width: 1200px)" href="src/css/large.css"/>
+    <link rel="stylesheet" media="(min-width: 1200px)" href="src/css/extra_large.css"/>
+  
+    <title>Lemon</title>
 </head>
 <body>
-	<div class="table-wraper">
-		<div class="mainRow">Main text:</div>
-		<div class="frstTable">
-			<div class="frstRow">
-				<div class="col col1">1st col 1st tab</div>
-				<div class="col col2">2nd col 1st tab</div>
-				<div class="col col3">3rd col 1st tab</div>
-				<div class="col col4">4th col 1st tab</div>
-			</div>
-			<div class="scndRow">
-				<div class="col col1"></div>
-				<div class="col col2"></div>
-				<div class="col col3"></div>
-				<div class="col col4"></div>
-			</div>
-		</div>
-		<div class="scndTable">
-			<div class="frstRow">
-				<div class="col col1">1st col 2nd tab</div>
-				<div class="col col2">2nd col 2nd tab</div>
-				<div class="col col3">3rd col 2nd tab</div>
-			</div>
-			<div class="scndRow">
-				<div class="col col1"></div>
-				<div class="col col2"></div>
-				<div class="col col3"></div>
-			</div>
-			
-		</div>
-	</div>
-		
-	
+    <div class="container">
+        <div class="mainWraper">
+            <div class="header">
+                <div class="head-logo">
+                    <img class="main-logo" src="src/img/Logo_copy.png" alt="">
+                </div>
+                <div class="a-nav-srch">
+                    <form class="nav-search">
+                        <input type="search" name="search" placeholder="Find recipe">
+                        <!-- <input type="submit" name="search-btn" value="Найти!"> -->
+                    </form>
+                </div>
+                <div class="section">
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+
+                </div>                
+                <div class="nav-menu">
+                    <div class="nav-logo">
+                        <a href="#"> <img class='mini-logo' src="src/img/Lemon_Logo.png" alt=""></a>
+                    </div>
+                    <div class="nav-links">
+                        <ul>                        
+                            <li><a href="#" class="nav-link">Home</a></li>
+                            <li><a href="#" class="nav-link">Recipes</a>
+                                <ul>
+                                    <li><a href="#">Recomended</a></li>
+                                    <li><a href="#">Popular</a></li>
+                                    <li><a href="#">Quik&easy</a></li>
+                                    <li><a href="#">Healthy</a></li>
+                                    <li><a href="#">Newest</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="nav-link">Photo Galleries</a></li>
+                            <li><a href="#" class="nav-link">Videos</a></li>
+                            <li><a href="#" class="nav-link">All categories</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-srch">
+                        <form class="nav-search">
+                            <input type="search" name="search" placeholder="Find recipe">
+                            <!-- <input type="submit" name="search-btn" value="Найти!"> -->
+                        </form>
+                    </div>
+                </div>  
+
+            </div>
+            <div class="content">
+                <div class="dishes">
+                    <div class="dishes-carousel">
+                        <div class="carousel slide-1">
+                            <div class="wraper-slide">
+                                <div class="recipe">
+                                    <div class="recipe-wraper">
+                                        <div class="r-logo"><img src="src/img/Lemon_Logo.png" alt="Lemon" class="logo-recipe"></div>
+                                        <div class="r-text">
+                                            <h3></h3>
+                                            <p>Preheat oven to 350°F.
+                                                In a large bowl mix the graham cracker crumbs, butter, granulated sugar, and salt together evenly. Press the mixture into the bottom and up the sides of 9-inch springform pan.
+                                                Bake the crust for 8-10 minutes, or until lightly golden. Set aside while you make the cheesecake.
+                                            </p>
+                                        </div>
+                                        <div class="r-btn"><a href="#"><input type="button" value="Get recipe"></a></div>                                
+                                    </div>
+                                </div>                        
+                                <div class="picture"> <img src="src/img/cake4.png" alt=""> </div>
+                                <div class="resp-btn">
+                                    <a href="#"><input type="button" value="GET RECIPE"></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="carousel slide-2">
+                            <div class="wraper-slide">
+                                <div class="recipe">
+                                    <div class="recipe-wraper">
+                                        <div class="r-logo"><img src="src/img/Lemon_Logo.png" alt="Lemon" class="logo-recipe"></div>
+                                        <div class="r-text">
+                                            <h3></h3>
+                                            <p>Preheat oven to 350°F.
+                                                In a large bowl mix the graham cracker crumbs, butter, granulated sugar, and salt together evenly. Press the mixture into the bottom and up the sides of 9-inch springform pan.
+                                                Bake the crust for 8-10 minutes, or until lightly golden. Set aside while you make the cheesecake.
+                                            </p>
+                                        </div>
+                                        <div class="r-btn"><a href="#"><input type="button" value="Get recipe"></a></div>                                
+                                    </div>
+                                </div>                        
+                                <div class="picture"> <img src="src/img/cupcake6.png" alt=""> </div>
+                                <div class="resp-btn">
+                                    <a href="#"><input type="button" value="GET RECIPE"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel slide-3">
+                            <div class="wraper-slide">
+                                <div class="recipe">
+                                    <div class="recipe-wraper">
+                                        <div class="r-logo"><img src="src/img/Lemon_Logo.png" alt="Lemon" class="logo-recipe"></div>
+                                        <div class="r-text">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                        <div class="r-btn"><a href="#"><input type="button" value="Get recipe"></a></div>                                
+                                    </div>
+                                </div>                        
+                                <div class="picture"> <img src="src/img/cupcake4.png" alt=""> </div>
+                                <div class="resp-btn">
+                                    <a href="#"><input type="button" value="GET RECIPE"></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="carousel slide-4">
+                            <div class="wraper-slide">
+                                <div class="recipe">
+                                    <div class="recipe-wraper">
+                                        <div class="r-logo"><img src="src/img/Lemon_Logo.png" alt="Lemon" class="logo-recipe"></div>
+                                        <div class="r-text">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                        <div class="r-btn"><a href="#"><input type="button" value="Get recipe"></a></div>                                
+                                    </div>
+                                </div>                        
+                                <div class="picture"> <img src="src/img/cake6.png" alt=""> </div>
+                                <div class="resp-btn">
+                                    <a href="#"><input type="button" value="GET RECIPE"></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="carousel slide-5">
+                            <div class="wraper-slide">
+                                <div class="recipe">
+                                    <div class="recipe-wraper">
+                                        <div class="r-logo"><img src="src/img/Lemon_Logo.png" alt="Lemon" class="logo-recipe"></div>
+                                        <div class="r-text">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                        <div class="r-btn"> <a href="#"><input type="button" value="Get recipe"></a></div>                                
+                                    </div>
+                                </div>                        
+                            <div class="picture"> <img src="src/img/cake5.png" alt=""> </div>
+                            <div class="resp-btn">
+                                <a href="#"><input type="button" value="GET RECIPE"></a>
+                            </div>
+                        </div>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="a-header">
+                        <p class="a-h-text">
+                            Author
+                        </p>
+                        <p class="line">
+                            <img src="src/img/Line.png" alt="">
+                        </p>
+                    </div>
+                    <div class="a-name">
+                         <p class="a-m-name">
+                            Karen Gray
+                        </p>
+                    </div>
+                    <div class="a-photo">
+                        <p class="a-m-photo">
+                            <img src="src/img/author_photo.png" alt="">
+                        </p>
+                    </div>
+                    <div class="a-links">
+                        <p class="a-m-country">
+                            <a href="#">United States</a>
+                        </p>
+                        <p class="a-m-links">
+                            <a href="#"><img src="src/img/google_ico.png" alt=""></a>
+                            <a href="#"><img src="src/img/twiter_ico.png" alt=""></a>
+                            <a href="#"><img src="src/img/facebook_ico.png" alt=""></a>
+                            <a href="#"><img src="src/img/pinterest_ico.png" alt=""></a>
+                        </p>
+                    </div>
+                    <div class="a-text">
+                        <h3>About Lemon</h3>
+                        <p>
+                            Over the fifteen-year life span of Food.com, we’ve learned that – 
+                            in addition to eating – sharing is what you do best. 
+                            And thanks to the 20 million of you who come here each month, 
+                            we now have 500,000 recipes to show for it, more than anywhere else in the digital universe. 
+                            We also have tons crazy-tempting photos, troves of recipe reviews and more 
+                            than 2 million Facebook likes. That’s a heck of a lot of Food. Thank you!
+                        </p>
+                    </div>
+                    <div class="a-signature">
+                        <p class="a-s-signature">
+                            <img src="src/img/Signature.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div class="a-header">
+                        <p class="a-h-text">
+                            Tags
+                        </p>
+                        <p class="line">
+                            <img src="src/img/Line.png" alt="">
+                        </p>
+                        
+                    </div>
+                    <div class="t-links">
+                        <p class="tags-links">
+                            <a href="#yummy">#yummy</a>
+                            <a href="#sweet">#sweet</a>
+                            <a href="#dinner">#dinner</a>
+                            <a href="#lunch">#lunch</a>
+                            <a href="#breakfast">#breakfast</a>
+                            <a href="#fresh">#fresh</a>
+                            <a href="#tasty">#tasty</a>
+                            <a href="#delish">#delish</a>
+                            <a href="#delicious">#delicious</a>
+                            <a href="#eating">#eating</a>
+                            <a href="#food">#food</a>                                     
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="nav-logo">
+                    <a href="#"> <img class='mini-logo' src="src/img/Logo_footer.png" alt=""></a>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Recipes</a>
+                    <a href="#" class="nav-link">Photo Galleries</a>
+                    <a href="#" class="nav-link">Videos</a>
+                    <a href="#" class="nav-link">All categories</a>  
+                </div>
+                <div class="copyright">
+                    <p class="c-1"><img src="src/img/Copyright.png" alt=""></p>
+                    <p class="c-2"> 2016-2017 LEMON. All right reserved</p>
+                </div>
+                <div class="social-links">
+                        <p>
+                            <a href="#"><img src="src/img/google_ico.png" alt=""></a>
+                            <a href="#"><img src="src/img/twiter_ico.png" alt=""></a>
+                            <a href="#"><img src="src/img/facebook_ico.png" alt=""></a>
+                            <a href="#"><img src="src/img/pinterest_ico.png" alt=""></a>
+                        </p>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Add jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- End jquery script -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="src/slick/slick.min.js"></script>
+    </script>
+
+    <!-- Slick slider script Start-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.dishes-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            adaptiveHeight: true,
+            pauseOnDotsHover: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        dots: false,
+                        arrows: false
+                    }
+                }
+            ]
+          });
+        });
+    </script>
+    <!-- Slick slider script End-->
+    <!-- Menu button func start -->
+    <script type="text/javascript">
+        $('.menu-btn').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('menu-btn-active');
+            $('.nav-menu').toggleClass('nav-menu_active');
+        });
+    </script>
 </body>
 </html>
