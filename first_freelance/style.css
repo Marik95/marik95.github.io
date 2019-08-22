@@ -1080,10 +1080,18 @@ input:disabled {
 .footer2>.row2{
 	grid-column-start: 1;
 	grid-column-end: 3;
-	border-color: #000;
-	border: 1px solid;
-	height: 50px;
+	/* border-color: #000;
+	border: 1px solid; */
+	height: 75%;
 }
+.footer2>.row2>textarea{
+	width: 100%;
+	border: 1px solid;
+	height: 75%;
+	outline: none;
+}
+
+
 .footer {
 	grid-column-start: 1;
 	grid-column-end: 13;
@@ -1133,3 +1141,6 @@ input:disabled {
 	margin-right: 12%;
 }
 /*  */
+.invalid { 
+   color: red;
+}

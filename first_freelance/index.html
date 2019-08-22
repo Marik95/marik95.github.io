@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap" rel="stylesheet">
+	
 	<title>Form</title>
 </head>
 <body>
@@ -67,11 +68,11 @@
 				<div class="col col5">Gebäudeart</div>
 			</div>
 			<div class="scndRow">
-				<div class="col col1"><input type="number"></div>
-				<div class="col col2"><input type="number"></div>
-				<div class="col col3"><input type="number" min="0" step="0.01"></div>
-				<div class="col col4"><input type="number" min="0"></div>
-				<div class="col col5"><input type="number"></div>
+				<div class="col col1"><input type="text" id="angabenInput1" onkeypress="limitKeypress(event,this.value,4)"></div>
+				<div class="col col2"><input type="text"></div>
+				<div class="col col3"><input type="number" min="0" step="0.1"></div>
+				<div class="col col4"><input type="text" id="angabenInput4"></div>
+				<div class="col col5"><input type="text"></div>
 			</div>
 		</div>
 		<div class="Angaben-scndTable">
@@ -81,7 +82,7 @@
 			</div>
 			<div class="scndRow">
 				<div class="col col1"><input type="number" step="0.01" min="0"></div>
-				<div class="col col2"><input type="number" min="0"></div>
+				<div class="col col2"><input type="text" id="angabenInput7"></div>
 			</div>
 			
 		</div>
@@ -95,10 +96,10 @@
 				<div class="col col4">Nennwärmeleistung</div>
 			</div>
 			<div class="scndRow">
-				<div class="col col1"><input type="number"></div>
-				<div class="col col2"><input type="number"></div>
-				<div class="col col3"><input type="number"></div>
-				<div class="col col4"><input type="number"></div>
+				<div class="col col1"><input type="text"></div>
+				<div class="col col2"><input type="text"></div>
+				<div class="col col3"><input type="text"></div>
+				<div class="col col4"><input type="text"></div>
 			</div>
 		</div>
 		<div class="Wärmeerzeuger-scndTable">
@@ -108,9 +109,9 @@
 				<div class="col col3">Art der Anlage</div>
 			</div>
 			<div class="scndRow">
-				<div class="col col1"><input type="number"></div>
-				<div class="col col2"><input type="number"></div>
-				<div class="col col3"><input type="number"></div>
+				<div class="col col1"><input type="text"></div>
+				<div class="col col2"><input type="text"></div>
+				<div class="col col3"><input type="text"></div>
 			</div>
 			
 		</div>
@@ -125,10 +126,10 @@
 				<div class="col col4">Gesamt</div>
 			</div>
 			<div class="scndRow">
-				<div class="col col1"><input type="number" min="0" max="100" onkeypress="limitKeypress(event,this.value,3)"></div>
-				<div class="col col2"><input type="number" min="0" max="100" onkeypress="limitKeypress(event,this.value,3)"></div>
-				<div class="col col3"><input type="number" min="0" max="100" onkeypress="limitKeypress(event,this.value,3)"></div>
-				<div class="col col4"><input disabled type="number" id="gesamt" ></div>
+				<div class="col col1"><input type="text" id="inputBewertung1" onkeypress="limitKeypress(event,this.value,3)"></div>
+				<div class="col col2"><input type="text" id="inputBewertung2" onkeypress="limitKeypress(event,this.value,3)"></div>
+				<div class="col col3"><input type="text" id="inputBewertung3" onkeypress="limitKeypress(event,this.value,3)"></div>
+				<div class="col col4"><input disabled type="text" id="gesamt" ></div>
 			</div>
 		</div>
 		<!-- Bewertung end-->
@@ -219,16 +220,16 @@
 				<div class="warmeerzeuger col2 row12"></div>
 
 				<div class="warmeerzeuger col3 row1"> hier eintragen</div>
-				<div class="warmeerzeuger col3 row2"><input type="number" min="0" max="15"></div>
-				<div class="warmeerzeuger col3 row3"><input type="number" min="0" max="8"></div>
-				<div class="warmeerzeuger col3 row4"><input type="number" min="0" max="5"></div>
-				<div class="warmeerzeuger col3 row5"><input type="number" min="0" max="5"></div>
-				<div class="warmeerzeuger col3 row6"><input type="number" min="0" max="5"></div>
+				<div class="warmeerzeuger col3 row2"><input type="text" id="anwenbugInput2" pattern="[0-9]|1[0-5]{1,2}" title="0 bis 15"></div>
+				<div class="warmeerzeuger col3 row3"><input type="text" id="anwenbugInput3" pattern="[0-8]{1}" title="0 bis 8"></div>
+				<div class="warmeerzeuger col3 row4"><input type="text" id="anwenbugInput4" pattern="[0-5]|{1}" title="0 bis 5"></div>
+				<div class="warmeerzeuger col3 row5"><input type="text" id="anwenbugInput5" pattern="[0|5]{1}" title="0/5"></div>
+				<div class="warmeerzeuger col3 row6"><input type="text" id="anwenbugInput6" pattern="[0|5]{1}" title="0/5"></div>
 				<div class="warmeerzeuger col3 row7"></div>
-				<div class="warmeerzeuger col3 row8"><input type="number" min="0" max="10"></div>
-				<div class="warmeerzeuger col3 row9"><input type="number" min="0" max="9"></div>
-				<div class="warmeerzeuger col3 row10"><input type="number" min="0" max="4"></div>
-				<div class="warmeerzeuger col3 row11"><input type="number" disabled></div>
+				<div class="warmeerzeuger col3 row8"><input type="text" id="anwenbugInput8" pattern="[0-9]|1[0]{1,2}" title="0 bis 10"></div>
+				<div class="warmeerzeuger col3 row9"><input type="text" id="anwenbugInput9" pattern="[5|7|9]{1}" title="5/7/9"></div>
+				<div class="warmeerzeuger col3 row10"><input type="text" id="anwenbugInput10" pattern="[0|2|4]{1}" title="0/2/4"></div>
+				<div class="warmeerzeuger col3 row11"><input type="text" id="anwenbugInput11" pattern="[0-10]{1,2}" title="0 bis 10" disabled></div>
 				<div class="warmeerzeuger col3 row12"></div>
 
 
@@ -263,17 +264,17 @@ korrekt dimensioniert / eingestellt</div>
 				<div class="warmeverteilung col2 row25"></div>
 
 				<div class="warmeverteilung col3 row13"></div>
-				<div class="warmeverteilung col3 row14"><input type="number" min="0" max="7"></div>
+				<div class="warmeverteilung col3 row14"><input type="text" id="anwenbugInput14" pattern="[0|3|7]{1}" title="0/3/7"></div>
 				<div class="warmeverteilung col3 row15"></div>
-				<div class="warmeverteilung col3 row16"><input type="number" min="0" max="10"></div>
-				<div class="warmeverteilung col3 row17"><input type="number" min="0" max="5"></div>
-				<div class="warmeverteilung col3 row18"><input type="number" min="0" max="5"></div>
-				<div class="warmeverteilung col3 row19"><input type="number" min="0" max="0"></div>
-				<div class="warmeverteilung col3 row20"><input type="number" min="0" max="0"></div>
-				<div class="warmeverteilung col3 row21"><input type="number" min="0" max="20"></div>
-				<div class="warmeverteilung col3 row22"><input type="number" min="0" max="10"></div>
-				<div class="warmeverteilung col3 row23"><input type="number" min="0" max="0"></div>
-				<div class="warmeverteilung col3 row24"><input type="number" disabled></div>
+				<div class="warmeverteilung col3 row16"><input type="text" id="anwenbugInput16" pattern="[0-9]|1[0]{1,2}" title="0 bis 10"></div>
+				<div class="warmeverteilung col3 row17"><input type="text" id="anwenbugInput17" pattern="[0-5]{1}" title="0 bis 5"></div>
+				<div class="warmeverteilung col3 row18"><input type="text" id="anwenbugInput18" pattern="[0-5]{1}" title="0 bis 5"></div>
+				<div class="warmeverteilung col3 row19"><input type="text" id="anwenbugInput19" pattern="[0]{1}" title="0"></div>
+				<div class="warmeverteilung col3 row20"><input type="text" id="anwenbugInput20" pattern="[0]{1}" title="0"></div>
+				<div class="warmeverteilung col3 row21"><input type="text" id="anwenbugInput21" pattern="[0-9]|1[0-9]|2[0]{1,2}" title="0 bis 20"></div>
+				<div class="warmeverteilung col3 row22"><input type="text" id="anwenbugInput22" pattern="[0-9]|1[0]{1,2}" title="0 bis 10"></div>
+				<div class="warmeverteilung col3 row23"><input type="text" id="anwenbugInput23" pattern="[0]{1}" title="0"></div>
+				<div class="warmeverteilung col3 row24"><input type="text" id="anwenbugInput24" pattern="[0]{1}" title="0 bis 10" disabled></div>
 				<div class="warmeverteilung col3 row25"></div>
 
 
@@ -307,16 +308,16 @@ korrekt dimensioniert / eingestellt</div>
 
 				<div class="warmeubergabe col3 row26"></div>
 				<div class="warmeubergabe col3 row27"></div>
-				<div class="warmeubergabe col3 row28"><input type="number" min="0" max="15"></div>
-				<div class="warmeubergabe col3 row29"><input type="number" min="0" max="10"></div>
-				<div class="warmeubergabe col3 row30"><input type="number" min="0" max="8"></div>
-				<div class="warmeubergabe col3 row31"><input type="number" min="0" max="4"></div>
-				<div class="warmeubergabe col3 row32"><input type="number" min="0" max="2"></div>
+				<div class="warmeubergabe col3 row28"><input type="text" id="anwenbugInput28" pattern="[0-9]|1[0-5]{1,2}" title="0 bis 15"></div>
+				<div class="warmeubergabe col3 row29"><input type="text" id="anwenbugInput29" pattern="[0-9]|1[0]{1,2}" title="0 bis 10"></div>
+				<div class="warmeubergabe col3 row30"><input type="text" id="anwenbugInput30" pattern="[6|8]{1,2}" title="6/8"></div>
+				<div class="warmeubergabe col3 row31"><input type="text" id="anwenbugInput31" pattern="[2|4]{1,2}" title="2/4"></div>
+				<div class="warmeubergabe col3 row32"><input type="text" id="anwenbugInput32" pattern="[0|2]{1,2}" title="0/2"></div>
 				<div class="warmeubergabe col3 row33"></div>
-				<div class="warmeubergabe col3 row34"><input type="number" min="0" max="15"></div>
-				<div class="warmeubergabe col3 row35"><input type="number" min="0" max="3"></div>
-				<div class="warmeubergabe col3 row36"><input type="number" min="0" max="0"></div>
-				<div class="warmeubergabe col3 row37"><input type="number" disabled></div>
+				<div class="warmeubergabe col3 row34"><input type="text" id="anwenbugInput34" pattern="[0-9]|1[0-5]{1,2}" title="0 bis 15"></div>
+				<div class="warmeubergabe col3 row35"><input type="text" id="anwenbugInput35" pattern="[0-3]{1}" title="0 bis 3"></div>
+				<div class="warmeubergabe col3 row36"><input type="text" id="anwenbugInput36" pattern="[0]{1,2}" title="0"></div>
+				<div class="warmeubergabe col3 row37"><input type="text" id="anwenbugInput37" pattern="[0-9]|1[0]{1,2}" title="0 bis 10" disabled></div>
 				<div class="warmeubergabe col3 row38"></div>
 			</div>
 			<div class="Gesamtpunkte footline">
@@ -327,7 +328,7 @@ korrekt dimensioniert / eingestellt</div>
 		</div>
 		<div class="footer2">
 			<div class="row1">Detaillierte Empfehlungen für den Betreiber / Eigentümer · Evtl. Bemerkungen zur Bewertung der Heizungsanlage:</div>
-			<div class="row2"></div>
+			<div class="row2"> <textarea name="" id="" cols="30" rows="10"></textarea> </div>
 		</div>
 	</div>
 		
@@ -336,8 +337,8 @@ korrekt dimensioniert / eingestellt</div>
     if (value != undefined && value.toString().length >= maxLength) {
         event.preventDefault();
     };
-
 }
 	</script>
+	<script src="script.js"></script>
 </body>
 </html>
