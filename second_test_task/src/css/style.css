@@ -1,0 +1,13 @@
+body {
+  margin: 0 auto;
+}
+
+wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: minmax(10px, auto);
+      grid-template-rows: minmax(10px, auto);
+}
+/*# sourceMappingURL=style.css.map */
