@@ -133,7 +133,7 @@ header
     margin-top: -2vw
     align-items: center
     justify-content: center
-    font-size: 2.5vw
+    font-size: 2.3vw
 
 
 .reswrap
@@ -202,7 +202,7 @@ header
     align-items: center
     justify-content: center
     color: $textWhite
-    font-size: 2.5vw
+    font-size: 2.3vw
     z-index: 10
 
 .part1_eff
@@ -332,7 +332,7 @@ span.gray
     margin-top: -2vw
     align-items: center
     justify-content: center
-    font-size: 2.5vw
+    font-size: 2.3vw
     color: $textWhite
 
 .white_ingr
@@ -389,7 +389,63 @@ span.gray
     background: url(../img/redfon_ingr.jpg)
     background-size: 100% auto
     background-repeat: no-repeat
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 10.625vw 5.2vw 3.75vw 6.625vw 6.125vw
 
+.safety
+    grid-column-start: 4
+    grid-column-end: 7
+    grid-row-start: 2
+    grid-row-end: 6
+    margin-left: -1.3vw
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 5.2vw 3.75vw 6.625vw 6.125vw
+    span.red
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 1
+        grid-row-end: 2
+        font-size: 2.5vw
+    span.black
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 2
+        grid-row-end: 5
+        font-size: 1.875vw
+    span.b1
+        grid-row-start: 2
+        grid-row-end: 3
+    span.b2
+        grid-row-start: 3
+        grid-row-end: 4
+    span.b3
+        grid-row-start: 4
+        grid-row-end: 5
+
+.applying
+    grid-column-start: 8
+    grid-column-end: 13
+    grid-row-start: 2
+    grid-row-end: 5
+    display: grid
+    color: $textWhite
+    padding-right: 4vw
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: 5.2vw 3.75vw 6.625vw
+    span.app_head
+        grid-column-start: 1
+        grid-column-end: 6
+        grid-row-start: 1
+        grid-row-end: 2
+        font-size: 2.5vw
+    span.app_text
+        grid-column-start: 1
+        grid-column-end: 6
+        grid-row-start: 2
+        grid-row-end: 5
+        font-size: 1.875vw
 
     // begin of cream_composition block
 .cream_composition
@@ -419,7 +475,7 @@ span.gray
     margin-top: -2vw
     align-items: center
     justify-content: center
-    font-size: 2.5vw
+    font-size: 2.3vw
     color: $textWhite
 
 .comp_text
@@ -453,7 +509,7 @@ span.gray
     display: grid
     border-top: 0.15vw solid $mainRed
     grid-template-columns: repeat(12, 1fr)
-    grid-auto-rows: minmax(10px, auto)
+    grid-template-rows: 2vw 25vw 5vw
     grid-column-gap: 20px
     grid-row-gap: 2.8vw
     height: 60vw
@@ -470,5 +526,73 @@ span.gray
     margin-top: -2vw
     align-items: center
     justify-content: center
-    font-size: 2.5vw
+    font-size: 2.3vw
     color: $textWhite
+
+.ap_1block
+    display: grid
+    grid-column-start: 1
+    grid-column-end: 6
+    grid-row-start: 2
+    grid-row-end: 3
+    background-image: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%)
+    max-height: 400px
+    width: 42.1875vw
+    max-width: 675px
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 25vw
+    img
+        width: 21.125vw
+        height: 17.1875vw
+        margin-bottom: -3.4vw
+.ap_2block
+    display: grid
+    grid-column-start: -6
+    grid-column-end: -1
+    grid-row-start: 2
+    grid-row-end: 3
+    background-image: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%)
+    max-height: 400px
+    width: 42.1875vw
+    max-width: 675px
+    margin-left: -20px
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 25vw
+    img
+        width: 23.125vw
+        height: 28.4375vw
+        margin-bottom: -3.4vw
+.ap-block-img
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 2
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+.ap-txt
+    display: flex
+    grid-row-start: 3
+    grid-row-end: 4
+    margin-top: 5.4vw
+    font-size: 1.25vw
+    justify-content: center
+    align-items: center
+    background: #fff
+    span.Vichy
+        font-weight: bold
+
+.ap-t1
+    grid-column-start: 2
+    grid-column-end: 6
+    margin-left: -2vw
+    padding-right: 2vw
+.ap-t2
+    grid-column-start: -6
+    grid-column-end: -1
+    padding-left: 4vw
+    padding-right: 6vw
+
+    
+        
