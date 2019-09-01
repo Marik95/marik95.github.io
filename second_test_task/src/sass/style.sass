@@ -1,6 +1,469 @@
+//textcolors
+$textWhite: #fff;
+$textBlack: #27282a;
+$mainRed: #ef2422;
+$resultBg: #0b0c0e;
+$eff1bg: #f1f1f1;
+$textGray: #999999;
+    
 body
     margin: 0 auto
+
+.container
+    margin: 0 auto
+    // position: absolute
+    width: 100%
+    max-width: 1600px
+    height: auto
+
 wrapper
+    margin: 0
+    width: 100%
     display: grid
     grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: minmax(10px, auto)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 20px
+    grid-row-gap: 0px
+    font-family: "Century Gothic"
+
+    //begin of HEADER
+header
+    display: grid
+    height: 58.55vw
+    max-height: 950px
+    width: 100%
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 2
+    background: url(../img/header_bg.jpg)
+    background-size: 100% auto
+    background-repeat: no-repeat
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, 9vw)
+    grid-column-gap: 20px
+    grid-row-gap: 0px
+    color: $textWhite
+
+.headline
+    display: grid
+    grid-column-start: 2
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 2    
+    font-size: 4.8vw
+    font-weight: 400
+    line-height: 60px
+    padding-top: 5vw 
+    h3
+        margin: 0 0 0 0
+    span
+        color: $mainRed
+
+.underline
+    grid-column-start: 2
+    grid-column-end: 13
+    grid-row-start: 2
+    grid-row-end: 3
+    font-size: 2.5vw
+    font-weight: 400
+    line-height: 60px
+    padding-top: 1vw
+
+.red-div
+    grid-column-start: 1
+    grid-column-end: 8
+    grid-row-start: 3
+    grid-row-end: 4
+    width: 95%
+    height: 45%
+    background-color: $mainRed
+    font-size: 2.5vw
+    font-weight: 400
+    line-height: 60px
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 20px
+    grid-row-gap: 0px
+    margin-top: 3vw
+    p
+        display: flex
+        justify-content: flex-start
+        margin-top: 0
+        padding-top: 2.1vw
+        // height: 70%
+        grid-column-start: 2
+        grid-column-end: 8
+        align-self: center;
+
+.header-text
+    grid-column-start: 2
+    grid-column-end: 8
+    margin-top: 7%
+    font-size: 1.5vw
+    //end of Header
+
+
+    // begin of result block
+.result
+    display: grid
+    max-height: 600px
+    height: 100% 
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 2
+    grid-row-end: 3
+    background: $resultBg
+    color: $textWhite
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 20px
+    grid-row-gap: 2.8vw
+
+.res_headline
+    display: flex
+    grid-column-start: 5
+    grid-column-end: -5
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.5vw
+
+
+.reswrap
+    // height: 200px    
+    grid-column-start: 2
+    grid-column-end: 12
+    grid-row-start: 2
+    grid-row-end: 3
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-areas: "photo1 photo2 photo3 photo4" "text1 text2 text3 text4"
+    grid-column-gap: 5.7vw
+    font-size: 1.7vw
+    img
+        width: 16vw
+        // width: 22vw
+.txt_res
+    padding-bottom: 5vw
+    span
+        color: $mainRed
+.ph1_res
+    grid-area: photo1
+    // height: 15vw
+.t1_res
+    grid-area: text1
+    
+.ph2_res
+    grid-area: photo2
+.t2_res
+    grid-area: text2
+
+.ph3_res
+    grid-area: photo3
+.t3_res
+    grid-area: text3
+
+.ph4_res
+    grid-area: photo4
+.t4_res
+    grid-area: text4
+
+
+// begin of efficiency block
+.efficiency
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 3
+    grid-row-end: 4
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 2vw 44.875vw 23.125vw
+    grid-column-gap: 20px
+    grid-row-gap: 0px
+    height: 70vw
+    max-height: 1120px
+    
+.eff_headline
+    display: flex
+    grid-column-start: 4
+    grid-column-end: -4
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    color: $textWhite
+    font-size: 2.5vw
+    z-index: 10
+
+.part1_eff
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    background-color: $eff1bg
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 2vw 44.875vw
+    grid-row-gap: 0px
+    grid-column-gap: 20px
+    max-height: 750px
+
+.p1_photo
+    grid-column-start: 1
+    grid-column-end: 6
+    grid-row-start: 2
+    grid-row-end: 3
+    max-height: 724px
+    img
+        width: 40vw
+
+    // begin of p1_diagram block
+.p1_diagram
+    grid-column-start: 6
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    max-height: 750px
+    display: grid
+    grid-template-columns: repeat(14, 0.5fr)
+    // grid-auto-rows: minmax(10px, auto)
+    grid-template-rows: 8.3175vw 11.375vw 8.4375vw 8.4375vw 10.3125vw
+    grid-row-gap: 0px
+    grid-column-gap: 20px
+    font-weight: 400
+    font-family: "Century Gothic"
+
+.diagram
+    grid-column-start: 2
+    grid-column-end: 7
+    grid-row-start: 2
+    grid-row-end: 5
+    img
+        width: 19.0625vw
+
+.month2
+    grid-column-start: 7
+    grid-column-end: 15
+    grid-row-start: 2
+    grid-row-end: 3
+.month1
+    grid-column-start: 6
+    grid-column-end: 15
+    grid-row-start: 3
+    grid-row-end: 4
+
+.hours8
+    grid-column-start: 5
+    grid-column-end: 15
+    grid-row-start: 4
+    grid-row-end: 5
+
+.momental
+    grid-column-start: 4
+    grid-column-end: 15
+    grid-row-start: 5
+    grid-row-end: 6
+
+.cream
+    grid-column-start: 9
+    grid-column-end: 13
+    grid-row-start: 4
+    grid-row-end: 6
+    margin-top: 5.5vw
+    margin-left: 3.5vw
+    img
+        width: 14.75vw
+
+span.red
+    color: $mainRed
+    font-size: 1.875vw
+span.black
+    color: $textBlack
+    font-size: 1.25vw
+
+span.gray
+    color: $textGray
+    font-size: 1vw
+
+.part2_eff
+    grid-column-start: 2
+    grid-column-end: 12
+    grid-row-start: 3
+    grid-row-end: 4
+    max-height: 370px
+    display: flex
+    align-items: center
+    font-size: 1.821vw
+
+
+
+    // begin of ingredients block
+.ingredients
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 4
+    grid-row-end: 5
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 2vw 66.75vw 43.4375vw
+    grid-column-gap: 20px
+    height: 112.1875vw
+    max-height: 1795px
+
+.ingr_headline
+    display: flex
+    grid-column-start: 5
+    grid-column-end: -5
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.5vw
+    color: $textWhite
+
+.white_ingr
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    max-height: 1100px
+    display: grid
+    grid-template-columns: repeat(24, 1fr)
+    grid-template-rows: repeat(24, 1fr)
+    z-index: 10
+
+
+.peptid
+    grid-column-start: 3
+    grid-column-end: 10
+    grid-row-start: 5
+    grid-row-end: 8
+    z-index: 20
+
+.vitamin_C
+    grid-column-start: -8
+    grid-column-end: -1
+    grid-row-start: 11
+    grid-row-end: 14
+    margin-top: 2vw
+    z-index: 20
+
+.termal_water
+    grid-column-start: 3
+    grid-column-end: 10
+    grid-row-start: 22
+    grid-row-end: 23
+    margin-top: 2vw
+    z-index: 20
+
+
+
+.pict_ingr
+    grid-column-start: 5 
+    grid-column-end: -6
+    grid-row-start: 4
+    grid-row-end: -2
+    img
+        width: 62.49vw
+
+.red_ingr
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 3
+    grid-row-end: 4
+    max-height: 695px
+    background: url(../img/redfon_ingr.jpg)
+    background-size: 100% auto
+    background-repeat: no-repeat
+
+
+    // begin of cream_composition block
+.cream_composition
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 5
+    grid-row-end: 6
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 20px
+    grid-row-gap: 2.8vw
+    max-height: 700px
+    height: 43.75vw
+    background-image: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 35%, #e3e3e3 70%, #e3e3e3 100%)
+
+.comp_headline
+    display: flex
+    grid-column-start: 5
+    grid-column-end: -5
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.5vw
+    color: $textWhite
+
+.comp_text
+    display: flex
+    grid-column-start: 1
+    grid-column-end: 8
+    grid-row-start: 1
+    grid-row-end: 3
+
+.comp_pict
+    display: flex
+    grid-column-start: 7
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    justify-content: flex-end
+    img
+        width: 43.75vw
+
+
+    // begin of another_products block
+.another_products
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 6
+    grid-row-end: 7
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 20px
+    grid-row-gap: 2.8vw
+    height: 60vw
+    max-height: 960px
+    
+.ap_headline
+    display: flex
+    grid-column-start: 3
+    grid-column-end: -3
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.5vw
+    color: $textWhite
