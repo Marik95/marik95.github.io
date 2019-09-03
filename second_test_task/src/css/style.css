@@ -308,6 +308,10 @@ header {
   max-height: 750px;
 }
 
+#px320 {
+  display: none;
+}
+
 .p1_photo {
   -ms-grid-column: 1;
       grid-column-start: 1;

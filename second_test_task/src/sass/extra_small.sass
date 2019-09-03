@@ -26,13 +26,15 @@ wrapper
     grid-row-start: 1
     grid-row-end: 2
     background: url(../img/header_bg320.jpg)
-    grid-template-columns: repeat(4, 1fr)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    grid-template-columns: repeat(8, 1fr)
     grid-auto-rows: minmax(10px, 19vw)
-    grid-column-gap: 10px
+    grid-column-gap: 10px 
 .headline
     display: flex
     grid-column-start: 1
-    grid-column-end: 5
+    grid-column-end: 9
     grid-row-start: 1
     grid-row-end: 2    
     font-size: 13.625vw
@@ -40,56 +42,63 @@ wrapper
     padding-top: 8vw 
     height: 24.375vw
     max-height: 78px
+    margin-left: 6.25vw
     h3
         margin: 0 0 0 0
     span
         color: $mainRed
 .underline
     grid-column-start: 1
-    grid-column-end: 5
+    grid-column-end: 9
     grid-row-start: 2
     grid-row-end: 3
-    font-size: 6vw
+    font-size: 5.9vw
     font-weight: 400
-    line-height: 60px
-    // padding-top: 6vw
+    line-height: 20px
+    padding-top: 6vw
+    margin-left: 6.25vw
 
 .red-div
     grid-column-start: 1
-    grid-column-end: 5
+    grid-column-end: 9
     grid-row-start: 3
     grid-row-end: 4
     background-color: $mainRed
-    font-size: 2.5vw
+    max-width: 96.875vw
+    height: 10vw
+    font-size: 4.4vw
     font-weight: 400
-    line-height: 60px
+    line-height: 0px
     display: grid
     grid-template-columns: repeat(7, 1fr)
     grid-auto-rows: minmax(10px, auto)
-    grid-column-gap: 20px
+    grid-column-gap: 0px
     grid-row-gap: 0px
-    margin-top: 8vw
+    align-items: center
+    // margin-top: 8vw
     p
         display: flex
         justify-content: flex-start
-        margin-top: 0
+        margin-top: 1.9vw
+        margin-left: 6.25vw
         padding-top: 2.1vw
         // height: 70%
-        grid-column-start: 2
+        grid-column-start: 1
         grid-column-end: 8
         align-self: center
     
 .header-text
     grid-column-start: 1
-    grid-column-end: 5
-    margin-top: 7%
-    font-size: 1.5vw
+    grid-column-end: 8
+    grid-row-start: 8
+    margin-left: 6.25vw  
+    margin-top: 12vw
+    font-size: 3.2vw
 
 // begin of result block
 .result
     display: grid
-    max-height: 600px
-    height: 100% 
+    max-height: 159.375vw 
     grid-column-start: 1
     grid-column-end: 5
     grid-row-start: 2
@@ -97,42 +106,62 @@ wrapper
     background: $resultBg
     color: $textWhite
     border-top: 0.15vw solid $mainRed
-    grid-template-columns: repeat(12, 1fr)
+    grid-template-columns: repeat(6, 1fr)
     grid-auto-rows: minmax(10px, auto)
-    grid-column-gap: 20px
+    grid-column-gap: 10px
     grid-row-gap: 2.8vw
+    margin-bottom: 20vw
+    
 
 .res_headline
     display: flex
-    grid-column-start: 5
-    grid-column-end: -5
+    grid-column-start: 1
+    grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 2
-    height: 4vw
+    max-width: 93.75vw
+    max-width: 320px
+    height: 10vw
     background: $mainRed
-    margin-top: -2vw
+    margin-top: -5vw
     align-items: center
     justify-content: center
-    font-size: 2.3vw
+    font-size: 4.5vw
+    margin-left: 3.125vw
+    margin-right: 3.125vw
 
 
 .reswrap
     // height: 200px    
-    grid-column-start: 2
-    grid-column-end: 12
-    grid-row-start: 2
+    grid-column-start: 1
+    grid-column-end: 7
+    grid-row-start: 1
     grid-row-end: 3
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    grid-template-areas: "photo1 photo2 photo3 photo4" "text1 text2 text3 text4"
-    grid-column-gap: 5.7vw
-    font-size: 1.7vw
-    img
-        width: 16vw
+    grid-template-columns: 2fr 2fr
+    grid-template-areas: "photo1 photo2" "text1 text2" "photo3 photo4" "text3 text4"
+    grid-column-gap: 3.6vw
+    font-size: 3.7vw
+    max-width: 93.75vw
+    margin-left: 3.125vw
+    margin-right: 3.125vw
+    padding-top: 8vw
+    img         
+        width: 38vw
+        max-width: 110px
         // width: 22vw
 .txt_res
-    padding-bottom: 5vw
+    padding-top: 2vw
+    margin-left: 2vw
+    max-width: 110px
+    height: 5vw
     span
         color: $mainRed
+        
+.photo_res
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 38vw
 .ph1_res
     grid-area: photo1
     // height: 15vw
@@ -148,11 +177,13 @@ wrapper
     grid-area: photo3
 .t3_res
     grid-area: text3
+    margin-bottom: 10vw
 
 .ph4_res
     grid-area: photo4
 .t4_res
     grid-area: text4
+    margin-bottom: 10vw
 
 
 // begin of efficiency block
@@ -163,127 +194,141 @@ wrapper
     grid-row-end: 4
     display: grid
     border-top: 0.15vw solid $mainRed
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 2vw 44.875vw 23.125vw
-    grid-column-gap: 20px
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: 2vw 235vw 23.125vw
+    grid-column-gap: 0px
     grid-row-gap: 0px
-    height: 70vw
-    max-height: 1120px
+    height: 281.25vw
+    max-height: 281.25vw
     
 .eff_headline
     display: flex
-    grid-column-start: 4
-    grid-column-end: -4
+    grid-column-start: 1
+    grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 2
-    height: 4vw
+    height: 10vw
     background: $mainRed
-    margin-top: -2vw
+    margin-top: -5vw
     align-items: center
     justify-content: center
     color: $textWhite
-    font-size: 2.3vw
+    font-size: 4.5vw
     z-index: 10
+    max-width: 93.75vw
+    margin-left: 3.125vw
+    margin-right: 3.125vw
 
 .part1_eff
     grid-column-start: 1
-    grid-column-end: 13
+    grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 3
     background-color: $eff1bg
     display: grid
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 2vw 44.875vw
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: 134.375vw 146.875vw
     grid-row-gap: 0px
-    grid-column-gap: 20px
-    max-height: 750px
+    grid-column-gap: 0px
+    height: 235vw
+    max-height: 235vw
+    // padding-top: 5vw
 
 .p1_photo
     grid-column-start: 1
-    grid-column-end: 6
+    grid-column-end: 7
     grid-row-start: 2
     grid-row-end: 3
     max-height: 724px
     img
-        width: 40vw
+        width: 90vw
 
     // begin of p1_diagram block
+#px320
+    display: inline
+#px1600
+    display: none
 .p1_diagram
-    grid-column-start: 6
-    grid-column-end: 13
+    grid-column-start: 1
+    grid-column-end: 7
     grid-row-start: 1
-    grid-row-end: 3
-    max-height: 750px
+    grid-row-end: 2
+    max-height: 134.375vw
+    height: 134.375vw
     display: grid
-    grid-template-columns: repeat(14, 0.5fr)
+    grid-template-columns: repeat(4, 0.5fr)
     // grid-auto-rows: minmax(10px, auto)
-    grid-template-rows: 8.3175vw 11.375vw 8.4375vw 8.4375vw 10.3125vw
+    grid-template-rows: 10.625vw 37.5vw 27.5vw 28.125vw 26.25vw
     grid-row-gap: 0px
-    grid-column-gap: 20px
+    grid-column-gap: 0px
     font-weight: 400
     font-family: "Century Gothic"
+    span
+        
 
 .diagram
-    grid-column-start: 2
-    grid-column-end: 7
+    grid-column-start: 1
+    grid-column-end: 2
     grid-row-start: 2
     grid-row-end: 5
     img
-        width: 19.0625vw
+        width: 29.375vw
+    
 
 .month2
-    grid-column-start: 7
-    grid-column-end: 15
+    grid-column-start: 2
+    grid-column-end: 5
     grid-row-start: 2
     grid-row-end: 3
+    line-height: 3.5vw
 .month1
-    grid-column-start: 6
-    grid-column-end: 15
+    grid-column-start: 2
+    grid-column-end: 5
     grid-row-start: 3
     grid-row-end: 4
+    margin-left: -6.5vw
+    line-height: 3.5vw
 
 .hours8
-    grid-column-start: 5
-    grid-column-end: 15
+    grid-column-start: 2
+    grid-column-end: 5
     grid-row-start: 4
     grid-row-end: 5
+    margin-left: -13.5vw
+    line-height: 3.5vw
 
 .momental
-    grid-column-start: 4
-    grid-column-end: 15
+    grid-column-start: 2
+    grid-column-end: 5
     grid-row-start: 5
     grid-row-end: 6
+    margin-left: -24.5vw
+    line-height: 3.5vw
 
 .cream
-    grid-column-start: 9
-    grid-column-end: 13
-    grid-row-start: 4
-    grid-row-end: 6
-    margin-top: 5.5vw
-    margin-left: 3.5vw
-    img
-        width: 14.75vw
+    display: none
 
 span.red
     color: $mainRed
-    font-size: 1.875vw
+    font-size: 4vw
 span.black
     color: $textBlack
-    font-size: 1.25vw
+    font-size: 3vw
 
 span.gray
     color: $textGray
-    font-size: 1vw
+    font-size: 2vw
 
 .part2_eff
-    grid-column-start: 2
-    grid-column-end: 12
+    grid-column-start: 1
+    grid-column-end: 7
     grid-row-start: 3
     grid-row-end: 4
     max-height: 370px
     display: flex
     align-items: center
-    font-size: 1.821vw
+    font-size: 3.5vw
+    padding-top: 5vw
 
 
 
@@ -295,44 +340,51 @@ span.gray
     grid-row-end: 5
     display: grid
     border-top: 0.15vw solid $mainRed
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 2vw 66.75vw 43.4375vw
-    grid-column-gap: 20px
-    height: 112.1875vw
-    max-height: 1795px
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: 2vw 177.5vw 137.8125vw
+    grid-column-gap: 0px
+    height: 317.8125vw
+    max-height: 317.8125vw
 
 .ingr_headline
     display: flex
-    grid-column-start: 5
-    grid-column-end: -5
+    grid-column-start: 1
+    grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 2
-    height: 4vw
+    height: 10vw
     background: $mainRed
-    margin-top: -2vw
+    margin-top: -5vw
     align-items: center
     justify-content: center
-    font-size: 2.3vw
     color: $textWhite
+    font-size: 4.5vw
+    z-index: 10
+    max-width: 93.75vw
+    margin-left: 3.125vw
+    margin-right: 3.125vw
 
 .white_ingr
     grid-column-start: 1
-    grid-column-end: 13
+    grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 3
-    max-height: 1100px
+    // max-height: 177.5vw
+    height: 177.5vw
     display: grid
-    grid-template-columns: repeat(24, 1fr)
-    grid-template-rows: repeat(24, 1fr)
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(12, 1fr)
     z-index: 10
 
 
 .peptid
-    grid-column-start: 3
-    grid-column-end: 10
-    grid-row-start: 5
-    grid-row-end: 8
+    grid-column-start: 1
+    grid-column-end: 6
+    grid-row-start: 1
+    grid-row-end: 4
     z-index: 20
+    margin-top: 11vw
+    line-height: 3.5vw
 
 .vitamin_C
     grid-column-start: -8
@@ -341,14 +393,16 @@ span.gray
     grid-row-end: 14
     margin-top: 2vw
     z-index: 20
+    line-height: 3.5vw
 
 .termal_water
-    grid-column-start: 3
-    grid-column-end: 10
-    grid-row-start: 22
-    grid-row-end: 23
+    grid-column-start: 1
+    grid-column-end: 6
+    grid-row-start: 6
+    grid-row-end: 8
     margin-top: 2vw
     z-index: 20
+    line-height: 3.5vw
 
 
 
@@ -362,10 +416,11 @@ span.gray
 
 .red_ingr
     grid-column-start: 1
-    grid-column-end: 13
+    grid-column-end: 7
     grid-row-start: 3
     grid-row-end: 4
-    max-height: 695px
+    max-height: 137.8125vw
+    height: 137.8125vw
     background: url(../img/redfon_ingr.jpg)
     background-size: 100% auto
     background-repeat: no-repeat
