@@ -197,7 +197,7 @@ wrapper {
 }
 
 .txt_res {
-  margin-left: 2vw;
+  margin-left: 0.5vw;
   width: 17.5625vw;
   height: 8vw;
   min-height: 8vw;
@@ -760,6 +760,7 @@ span.gray {
   grid-column-gap: 3.125vw;
   max-height: 51.76010430247718vw;
   height: 51.76010430247718vw;
+  margin-bottom: 0vw;
   background-image: -webkit-gradient(linear, left top, right top, from(#f1f1f1), color-stop(35%, #f1f1f1), color-stop(70%, #e3e3e3), to(#e3e3e3));
   background-image: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 35%, #e3e3e3 70%, #e3e3e3 100%);
 }

@@ -374,6 +374,7 @@ header {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+  line-height: 1.35vw;
   margin-top: -0.45vw;
 }
 
@@ -384,6 +385,7 @@ header {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
+  line-height: 1.35vw;
   margin-top: -2.45vw;
 }
 
@@ -394,6 +396,7 @@ header {
   -ms-grid-row: 4;
       grid-row-start: 4;
   grid-row-end: 5;
+  line-height: 1.35vw;
   margin-top: -3.85vw;
   margin-left: -0.4vw;
 }
@@ -405,6 +408,7 @@ header {
   -ms-grid-row: 4;
       grid-row-start: 4;
   grid-row-end: 6;
+  line-height: 1.35vw;
   margin-top: 2.3vw;
   margin-left: 1.6vw;
 }
@@ -523,6 +527,7 @@ span.gray {
   -ms-grid-row: 5;
       grid-row-start: 5;
   grid-row-end: 8;
+  line-height: 1.5vw;
   z-index: 20;
 }
 
@@ -533,7 +538,8 @@ span.gray {
   -ms-grid-row: 11;
       grid-row-start: 11;
   grid-row-end: 14;
-  margin-top: 2vw;
+  margin-top: 1vw;
+  line-height: 1.5vw;
   z-index: 20;
 }
 
@@ -544,6 +550,7 @@ span.gray {
   -ms-grid-row: 23;
       grid-row-start: 23;
   grid-row-end: 24;
+  line-height: 1.5vw;
   z-index: 20;
 }
 

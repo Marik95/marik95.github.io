@@ -749,6 +749,7 @@ span.gray {
   grid-column-gap: 3.125vw;
   max-height: 124.1vw;
   height: 124.1vw;
+  margin-bottom: 0vw;
   background-image: -webkit-gradient(linear, left top, right top, from(#f1f1f1), color-stop(35%, #f1f1f1), color-stop(70%, #e3e3e3), to(#e3e3e3));
   background-image: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 35%, #e3e3e3 70%, #e3e3e3 100%);
 }
@@ -833,7 +834,7 @@ span.gray {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  height: 15vw;
+  height: 13vw;
   background: #ef2422;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -844,7 +845,7 @@ span.gray {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -7.5vw;
+  margin-top: -6.5vw;
   font-size: 4.5vw;
   color: #fff;
   z-index: 20;
