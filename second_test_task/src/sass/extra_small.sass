@@ -9,8 +9,8 @@ $textGray: #999999;
 .container
     margin: 0 auto
     // position: absolute
-    width: 100%
-    max-width: 288px
+    width: 90vw
+    max-width: 90vw
     height: auto
 wrapper    
     grid-template-columns: repeat(4, 1fr)
@@ -20,7 +20,7 @@ wrapper
 .header
     display: grid
     height: 209.375vw
-    max-height: 670px
+    max-height: 209.375vw
     grid-column-start: 1
     grid-column-end: 5
     grid-row-start: 1
@@ -30,7 +30,7 @@ wrapper
     background-repeat: no-repeat
     grid-template-columns: repeat(8, 1fr)
     grid-auto-rows: minmax(10px, 19vw)
-    grid-column-gap: 10px 
+    grid-column-gap: 3.125vw
 .headline
     display: flex
     grid-column-start: 1
@@ -41,7 +41,7 @@ wrapper
     font-weight: 400
     padding-top: 8vw 
     height: 24.375vw
-    max-height: 78px
+    max-height: 24.375vw
     margin-left: 6.25vw
     h3
         margin: 0 0 0 0
@@ -54,8 +54,8 @@ wrapper
     grid-row-end: 3
     font-size: 5.9vw
     font-weight: 400
-    line-height: 20px
-    padding-top: 6vw
+    line-height: 6.25vw
+    padding-top: 3vw
     margin-left: 6.25vw
 
 .red-div
@@ -64,8 +64,10 @@ wrapper
     grid-row-start: 3
     grid-row-end: 4
     background-color: $mainRed
-    max-width: 96.875vw
-    height: 10vw
+    max-width: 90vw
+    width: 90vw
+    max-height: 10.9375vw
+    height: 10.9375vw
     font-size: 4.4vw
     font-weight: 400
     line-height: 0px
@@ -81,7 +83,7 @@ wrapper
         justify-content: flex-start
         margin-top: 1.9vw
         margin-left: 6.25vw
-        padding-top: 2.1vw
+        // padding-top: 2.1vw
         // height: 70%
         grid-column-start: 1
         grid-column-end: 8
@@ -98,7 +100,8 @@ wrapper
 // begin of result block
 .result
     display: grid
-    max-height: 159.375vw 
+    max-height: 125.75vw
+    height:  125.75vw
     grid-column-start: 1
     grid-column-end: 5
     grid-row-start: 2
@@ -108,9 +111,10 @@ wrapper
     border-top: 0.15vw solid $mainRed
     grid-template-columns: repeat(6, 1fr)
     grid-auto-rows: minmax(10px, auto)
-    grid-column-gap: 10px
-    grid-row-gap: 2.8vw
-    margin-bottom: 20vw
+    grid-column-gap: 3.125vw
+    justify-content: center
+    // grid-row-gap: 2.8vw
+    // margin-bottom: 20vw
     
 
 .res_headline
@@ -119,41 +123,47 @@ wrapper
     grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 2
-    max-width: 93.75vw
-    max-width: 320px
+    max-width: 90vw
     height: 10vw
     background: $mainRed
     margin-top: -5vw
     align-items: center
     justify-content: center
     font-size: 4.5vw
-    margin-left: 3.125vw
-    margin-right: 3.125vw
+    margin-left: 5vw
+    margin-right: 5vw
 
 
 .reswrap
     // height: 200px    
     grid-column-start: 1
     grid-column-end: 7
-    grid-row-start: 1
+    grid-row-start: 2
     grid-row-end: 3
     grid-template-columns: 2fr 2fr
     grid-template-areas: "photo1 photo2" "text1 text2" "photo3 photo4" "text3 text4"
-    grid-column-gap: 3.6vw
+    grid-template-rows: 39vw 13vw 39vw 13vw
+    grid-column-gap: 1.6vw
     font-size: 3.7vw
-    max-width: 93.75vw
-    margin-left: 3.125vw
-    margin-right: 3.125vw
-    padding-top: 8vw
+    max-width: 90vw
+    height: 125vw
+    min-height: 125vw
+    // margin-left: 3vw
+    margin-right: 3vw
+    // margin-top: -9vw
     img         
-        width: 38vw
-        max-width: 110px
+        width: 32.5625vw
+        max-width: 32.5625vw
         // width: 22vw
-.txt_res
-    padding-top: 2vw
-    margin-left: 2vw
-    max-width: 110px
-    height: 5vw
+.txt_res    
+    // display: flex
+    // align-items: center
+    // justify-content: center
+    margin-left: 5vw
+    width: 32.5625vw
+    height: 10vw
+    min-height: 10vw
+    padding-bottom: 0vw
     span
         color: $mainRed
         
@@ -161,7 +171,6 @@ wrapper
     display: flex
     align-items: center
     justify-content: center
-    max-width: 38vw
 .ph1_res
     grid-area: photo1
     // height: 15vw
@@ -177,14 +186,14 @@ wrapper
     grid-area: photo3
 .t3_res
     grid-area: text3
-    margin-bottom: 10vw
+    
 
 .ph4_res
     grid-area: photo4
 .t4_res
     grid-area: text4
-    margin-bottom: 10vw
-
+    margin-right: -5vw
+   
 
 // begin of efficiency block
 .efficiency
@@ -215,7 +224,7 @@ wrapper
     color: $textWhite
     font-size: 4.5vw
     z-index: 10
-    max-width: 93.75vw
+    max-width: 90vw
     margin-left: 3.125vw
     margin-right: 3.125vw
 
@@ -242,10 +251,13 @@ wrapper
     max-height: 724px
     img
         width: 90vw
+        height: auto
 
     // begin of p1_diagram block
 #px320
     display: inline
+#px767
+    display: none
 #px1600
     display: none
 .p1_diagram
@@ -273,6 +285,7 @@ wrapper
     grid-row-end: 5
     img
         width: 29.375vw
+        height: auto
     
 
 .month2
@@ -281,12 +294,15 @@ wrapper
     grid-row-start: 2
     grid-row-end: 3
     line-height: 3.5vw
+    margin-left: 3vw
+    margin-top: -2vw
 .month1
     grid-column-start: 2
     grid-column-end: 5
     grid-row-start: 3
     grid-row-end: 4
-    margin-left: -6.5vw
+    margin-left: -4.5vw
+    margin-top: -1vw
     line-height: 3.5vw
 
 .hours8
@@ -294,7 +310,8 @@ wrapper
     grid-column-end: 5
     grid-row-start: 4
     grid-row-end: 5
-    margin-left: -13.5vw
+    margin-left: -10.5vw
+    margin-top: -1vw
     line-height: 3.5vw
 
 .momental
@@ -302,7 +319,8 @@ wrapper
     grid-column-end: 5
     grid-row-start: 5
     grid-row-end: 6
-    margin-left: -24.5vw
+    margin-left: -21.5vw
+    margin-top: 0vw
     line-height: 3.5vw
 
 .cream
@@ -341,10 +359,10 @@ span.gray
     display: grid
     border-top: 0.15vw solid $mainRed
     grid-template-columns: repeat(6, 1fr)
-    grid-template-rows: 2vw 177.5vw 137.8125vw
+    grid-template-rows: 2vw 135.5vw 122.5vw
     grid-column-gap: 0px
-    height: 317.8125vw
-    max-height: 317.8125vw
+    height: 258.25vw
+    max-height: 258.25vw
 
 .ingr_headline
     display: flex
@@ -360,7 +378,7 @@ span.gray
     color: $textWhite
     font-size: 4.5vw
     z-index: 10
-    max-width: 93.75vw
+    max-width: 90vw
     margin-left: 3.125vw
     margin-right: 3.125vw
 
@@ -369,118 +387,134 @@ span.gray
     grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 3
-    // max-height: 177.5vw
-    height: 177.5vw
+    height: 135.5vw
+    max-height: 135.5vw
     display: grid
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: repeat(12, 1fr)
     z-index: 10
 
-
 .peptid
     grid-column-start: 1
-    grid-column-end: 6
+    grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 4
     z-index: 20
     margin-top: 11vw
+    margin-left: 3vw
     line-height: 3.5vw
 
 .vitamin_C
-    grid-column-start: -8
-    grid-column-end: -1
-    grid-row-start: 11
-    grid-row-end: 14
-    margin-top: 2vw
+    grid-column-start: 6
+    grid-column-end: 13
+    grid-row-start: 12
+    grid-row-end: 13
+    margin-left: 1.5vw
     z-index: 20
     line-height: 3.5vw
 
 .termal_water
-    grid-column-start: 1
-    grid-column-end: 6
-    grid-row-start: 6
-    grid-row-end: 8
-    margin-top: 2vw
+    grid-column-start: 2
+    grid-column-end: 8
+    grid-row-start: 11
+    grid-row-end: 12
+    // margin-top: -vw
     z-index: 20
     line-height: 3.5vw
 
 
 
 .pict_ingr
-    grid-column-start: 5 
-    grid-column-end: -6
-    grid-row-start: 4
-    grid-row-end: -2
+    grid-column-start: 1 
+    grid-column-end: 13
+    grid-row-start: 3
+    grid-row-end: 8
+    margin-left: 2vw
     img
-        width: 62.49vw
+        width: 88vw
+#pngID
+    display: none
 
 .red_ingr
     grid-column-start: 1
     grid-column-end: 7
     grid-row-start: 3
     grid-row-end: 4
-    max-height: 137.8125vw
-    height: 137.8125vw
-    background: url(../img/redfon_ingr.jpg)
+    max-height: 122.5vw
+    height: 122.5vw
+    background: url(../img/redfon_ingr320.jpg)
     background-size: 100% auto
     background-repeat: no-repeat
     display: grid
     grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 10.625vw 5.2vw 3.75vw 6.625vw 6.125vw
+    grid-template-rows: 12vw 9.1vw 5.375vw 6.0625vw 12.5vw 12.9vw 12.9vw 12.9vw 12.9vw 12.9vw 12.9vw
 
 .safety
-    grid-column-start: 4
-    grid-column-end: 7
-    grid-row-start: 2
-    grid-row-end: 6
-    margin-left: -1.3vw
+    grid-column-start: 5
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 7
+    margin-left: 0.3vw
     display: grid
-    grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: 5.2vw 3.75vw 6.625vw 6.125vw
-    span.red
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 12vw 9.1vw 9.375vw 13.0625vw 12.5vw
+    span.free
         grid-column-start: 1
         grid-column-end: 4
         grid-row-start: 1
         grid-row-end: 2
-        font-size: 2.5vw
-    span.black
+        min-height: 12vw
+    span.red
         grid-column-start: 1
         grid-column-end: 4
         grid-row-start: 2
-        grid-row-end: 5
-        font-size: 1.875vw
-    span.b1
-        grid-row-start: 2
         grid-row-end: 3
-    span.b2
+        font-size: 4.5vw
+        margin-left: -6.1vw
+        min-height: 9.1vw
+        // font-weight: bold
+    span.black
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 3
+        grid-row-end: 6
+        font-size: 3.1vw
+    span.b1
         grid-row-start: 3
         grid-row-end: 4
-    span.b3
+        min-height: 9.375vw
+    span.b2
         grid-row-start: 4
         grid-row-end: 5
+        min-height: 13.0625vw
+    span.b3
+        grid-row-start: 5
+        grid-row-end: 6
+        min-height: 12.5vw
 
 .applying
-    grid-column-start: 8
+    grid-column-start: 4
     grid-column-end: 13
-    grid-row-start: 2
-    grid-row-end: 5
+    grid-row-start: 8
+    grid-row-end: 12
     display: grid
     color: $textWhite
     padding-right: 4vw
     grid-template-columns: repeat(5, 1fr)
     grid-template-rows: 5.2vw 3.75vw 6.625vw
+    margin-left: 2vw
     span.app_head
         grid-column-start: 1
         grid-column-end: 6
         grid-row-start: 1
         grid-row-end: 2
-        font-size: 2.5vw
+        font-size: 4.5vw
     span.app_text
         grid-column-start: 1
         grid-column-end: 6
-        grid-row-start: 2
+        grid-row-start: 3
         grid-row-end: 5
-        font-size: 1.875vw
+        font-size: 3.1vw
 
     // begin of cream_composition block
 .cream_composition
@@ -490,49 +524,44 @@ span.gray
     grid-row-end: 6
     display: grid
     border-top: 0.15vw solid $mainRed
-    grid-template-columns: repeat(12, 1fr)
-    grid-auto-rows: minmax(10px, auto)
-    grid-column-gap: 20px
-    grid-row-gap: 2.8vw
-    max-height: 700px
-    height: 43.75vw
-    margin-bottom: 8.5vw
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: 2vw 122.1vw
+    grid-column-gap: 3.125vw
+    // grid-row-gap: 2.8vw
+    max-height: 124.1vw
+    height: 124.1vw
+    // margin-bottom: 8.5vw
     background-image: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 35%, #e3e3e3 70%, #e3e3e3 100%)
-
 .comp_headline
     display: flex
-    grid-column-start: 5
-    grid-column-end: -5
+    grid-column-start: 1
+    grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 2
-    height: 4vw
+    height: 10vw
     background: $mainRed
-    margin-top: -2vw
+    margin-top: -5vw
     align-items: center
     justify-content: center
-    font-size: 2.3vw
+    font-size: 4.5vw
     color: $textWhite
+    margin-left: 3.125vw
+    margin-right: 3.125vw
 
 .comp_text
     display: flex
-    grid-column-start: 2
+    grid-column-start: 1
     grid-column-end: 7
     grid-row-start: 1
     grid-row-end: 3
     justify-content: center
     align-items: center
     color: $textBlack
-    font-size: 1.25vw
+    font-size: 3.75vw
+    margin: 0 1.7vw
 
 .comp_pict
-    display: flex
-    grid-column-start: 8
-    grid-column-end: 13
-    grid-row-start: 1
-    grid-row-end: 3
-    justify-content: flex-end
-    img
-        width: 43.75vw
+    display: none
 
 
     // begin of another_products block
@@ -543,65 +572,72 @@ span.gray
     grid-row-end: 7
     display: grid
     border-top: 0.15vw solid $mainRed
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 2vw 25vw 5vw
-    grid-column-gap: 20px
-    grid-row-gap: 2.8vw
-    height: 60vw
-    max-height: 960px
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 10vw 57.1875vw 20vw
+    grid-column-gap: 3.125vw
+    // grid-row-gap: 2.8vw
+    height: 105vw
+    max-height: 105vw
+    br
+       display: inline
     
-.ap_headline
-    display: flex
-    grid-column-start: 3
-    grid-column-end: -3
+.ap_headline    
+    grid-column-start: 1
+    grid-column-end: 5
     grid-row-start: 1
     grid-row-end: 2
-    height: 4vw
+    height: 15vw
     background: $mainRed
-    margin-top: -2vw
+    display: flex    
     align-items: center
     justify-content: center
-    font-size: 2.3vw
+    margin-top: -7.5vw
+    font-size: 4.5vw
     color: $textWhite
-
+    z-index: 20
+    margin-left: 3.125vw
+    margin-right: 3.125vw
+    text-align: center
 .ap_1block
     display: grid
     grid-column-start: 1
-    grid-column-end: 6
-    grid-row-start: 2
+    grid-column-end: 3
+    grid-row-start: 1
     grid-row-end: 3
     background-image: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%)
-    max-height: 400px
-    width: 42.1875vw
-    max-width: 675px
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 25vw
+    max-height: 67.1875vw
+    height: 67.1875vw   
+    width: 40.3125vw
+    max-width: 40.3125vw
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 2vw 65.1875vw 5vw
     img
-        width: 21.125vw
-        height: 17.1875vw
+        width: 36vw
+        height: 30.4375vw
         margin-bottom: -3.4vw
 .ap_2block
     display: grid
-    grid-column-start: -6
-    grid-column-end: -1
-    grid-row-start: 2
+    grid-column-start: 3
+    grid-column-end: 5
+    grid-row-start: 1
     grid-row-end: 3
     background-image: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%)
-    max-height: 400px
-    width: 42.1875vw
-    max-width: 675px
-    margin-left: -20px
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 25vw
+    max-height: 67.1875vw
+    height: 67.1875vw
+    width: 40.3125vw
+    max-width: 40.3125vw
+    // margin-left: -20px
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 2vw 65.1875vw 5vw
     img
-        width: 23.125vw
-        height: 28.4375vw
+        width: 39.75vw
+        height: 51.6875vw
         margin-bottom: -3.4vw
 .ap-block-img
     grid-column-start: 1
-    grid-column-end: 13
-    grid-row-start: 1
-    grid-row-end: 2
+    grid-column-end: 5
+    grid-row-start: 2
+    grid-row-end: 3
     display: flex
     justify-content: center
     align-items: flex-end
@@ -611,20 +647,20 @@ span.gray
     grid-row-start: 3
     grid-row-end: 4
     margin-top: 5.4vw
-    font-size: 1.25vw
-    justify-content: center
-    align-items: center
+    font-size: 3.25vw
+    // justify-content: center
+    // align-items: center
     background: #fff
     span.Vichy
         font-weight: bold
 
 .ap-t1
-    grid-column-start: 2
-    grid-column-end: 6
-    margin-left: -2vw
+    grid-column-start: 1
+    grid-column-end: 3
+    margin-left: 2vw
     padding-right: 2vw
 .ap-t2
-    grid-column-start: -6
+    grid-column-start: 3
     grid-column-end: -1
-    padding-left: 4vw
-    padding-right: 6vw
+    padding-left: 2vw
+    padding-right: 2vw

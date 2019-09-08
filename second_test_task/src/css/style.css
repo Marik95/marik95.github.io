@@ -315,6 +315,10 @@ header {
   display: none;
 }
 
+#px767 {
+  display: none;
+}
+
 .p1_photo {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -556,6 +560,10 @@ span.gray {
   width: 52.1875vw;
 }
 
+#pngID {
+  display: none;
+}
+
 .red_ingr {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -777,6 +785,10 @@ span.gray {
   grid-row-gap: 2.8vw;
   height: 50vw;
   max-height: 50vw;
+}
+
+.another_products br {
+  display: none;
 }
 
 .ap_headline {
