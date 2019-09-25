@@ -1,0 +1,633 @@
+//textcolors
+$textWhite: #fff;
+$textBlack: #27282a;
+$mainRed: #ef2422;
+$resultBg: #0b0c0e;
+$eff1bg: #f1f1f1;
+$textGray: #999999;
+    
+body
+    margin: 0 auto
+
+.container
+    margin: 0 auto
+    // position: absolute
+    width: 100%
+    max-width: 83.33333333333334vw
+    height: auto
+
+wrapper
+    margin: 0
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 20px
+    grid-row-gap: 0px
+    font-family: "Century Gothic"
+
+    //begin of HEADER
+header
+    display: grid
+    height: 49.47916666666667vw
+    max-height: 49.47916666666667vw
+    width: 100%
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 2
+    background: url(../img/header_bg.jpg)
+    background-size: 100% auto
+    background-repeat: no-repeat
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, 9vw)
+    grid-column-gap: 1.0416666666666665vw
+    grid-row-gap: 0px
+    color: $textWhite
+
+.headline
+    display: grid
+    grid-column-start: 2
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 2    
+    font-size: 4.8vw
+    font-weight: 400
+    line-height: 3.125vw
+    padding-top: 5vw 
+    h3
+        margin: 0 0 0 0
+    span
+        color: $mainRed
+
+.underline
+    grid-column-start: 2
+    grid-column-end: 13
+    grid-row-start: 2
+    grid-row-end: 3
+    font-size: 2.5vw
+    font-weight: 400
+    line-height: 60px
+    padding-top: 1vw
+
+.red-div
+    grid-column-start: 1
+    grid-column-end: 8
+    grid-row-start: 3
+    grid-row-end: 4
+    max-width: 45.520833333333336vw
+    width: 45.520833333333336vw
+    max-height: 3.125vw
+    height: 3.125vw
+    background-color: $mainRed
+    font-size: 2.18vw
+    font-weight: 400
+    line-height: 60px
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 1.0416666666666665vw
+    grid-row-gap: 0px
+    margin-top: 3vw
+    p
+        display: flex
+        justify-content: flex-start
+        margin-top: 0
+        padding-top: 2.1vw
+        // height: 70%
+        grid-column-start: 2
+        grid-column-end: 8
+        align-self: center
+
+.header-text
+    grid-column-start: 2
+    grid-column-end: 8
+    margin-top: 7%
+    font-size: 1.5vw
+    //end of Header
+
+
+    // begin of result block
+.result
+    display: grid
+    max-height: 31.25vw
+    height: 31.25vw
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 2
+    grid-row-end: 3
+    background: $resultBg
+    color: $textWhite
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 1.0416666666666665vw
+    grid-row-gap: 2.8vw
+
+.res_headline
+    display: flex
+    grid-column-start: 5
+    grid-column-end: -5
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.3vw
+
+
+.reswrap
+    // height: 200px    
+    grid-column-start: 2
+    grid-column-end: 12
+    grid-row-start: 2
+    grid-row-end: 3
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-areas: "photo1 photo2 photo3 photo4" "text1 text2 text3 text4"
+    grid-column-gap: 3.6458333333333335vw
+    font-size: 1.7vw
+    img
+        width: 15.104166666666666vw
+        // width: 22vw
+.txt_res
+    padding-bottom: 5vw
+    span
+        color: $mainRed
+.ph1_res
+    grid-area: photo1
+    // height: 15vw
+.t1_res
+    grid-area: text1
+    
+.ph2_res
+    grid-area: photo2
+.t2_res
+    grid-area: text2
+
+.ph3_res
+    grid-area: photo3
+.t3_res
+    grid-area: text3
+
+.ph4_res
+    grid-area: photo4
+.t4_res
+    grid-area: text4
+
+
+// begin of efficiency block
+.efficiency
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 3
+    grid-row-end: 4
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 2vw 37.0625vw 19.270833333333336vw
+    grid-column-gap: 1.0416666666666665vw
+    grid-row-gap: 0px
+    height: 58.333333333333336vw
+    max-height: 58.333333333333336vw
+    
+.eff_headline
+    display: flex
+    grid-column-start: 4
+    grid-column-end: -4
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    color: $textWhite
+    font-size: 2.3vw
+    z-index: 10
+
+.part1_eff
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    background-color: $eff1bg
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 2vw 44.875vw
+    grid-row-gap: 0px
+    grid-column-gap: 20px
+    max-height: 37.0625vw
+    height: 37.0625vw
+
+#px320
+    display: none
+#px767
+    display: none
+.p1_photo
+    grid-column-start: 1
+    grid-column-end: 6
+    grid-row-start: 2
+    grid-row-end: 3
+    max-height: 35.916666666666664vw
+    img
+        // width: 34.11458333333333vw
+        height: 34.916666666666664vw
+
+
+    // begin of p1_diagram block
+.p1_diagram
+    grid-column-start: 6
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    max-height: 750px
+    display: grid
+    grid-template-columns: repeat(14, 0.5fr)
+    // grid-auto-rows: minmax(10px, auto)
+    grid-template-rows: 8.3175vw 11.375vw 8.4375vw 8.4375vw 10.3125vw
+    grid-row-gap: 0px
+    grid-column-gap: 20px
+    font-weight: 400
+    font-family: "Century Gothic"
+
+.diagram
+    grid-column-start: 1
+    grid-column-end: 7
+    grid-row-start: 2
+    grid-row-end: 6
+    margin-top: -0.6vw
+    img
+        // width: 16.041666666666668vw
+        height: 23.854166666666668vw
+
+.month2
+    grid-column-start: 6
+    grid-column-end: 14
+    grid-row-start: 2
+    grid-row-end: 3
+    line-height: 1.35vw
+    margin-top: -0.45vw
+.month1
+    grid-column-start: 5
+    grid-column-end: 15
+    grid-row-start: 3
+    grid-row-end: 4
+    line-height: 1.35vw
+    margin-top: -2.45vw
+
+.hours8
+    grid-column-start: 4
+    grid-column-end: 15
+    grid-row-start: 4
+    grid-row-end: 5
+    line-height: 1.35vw
+    margin-top: -3.85vw
+    margin-left: -0.4vw
+
+.momental
+    grid-column-start: 2
+    grid-column-end: 15
+    grid-row-start: 4
+    grid-row-end: 6
+    line-height: 1.35vw
+    margin-top: 2.3vw
+    margin-left: 1.6vw
+
+.cream
+    grid-column-start: 10
+    grid-column-end: 13
+    grid-row-start: 4
+    grid-row-end: 6
+    margin-top: -2.5vw
+    // margin-left: 3.5vw
+    img
+        width: 12.135416666666666vw
+
+span.red
+    color: $mainRed
+    font-size: 1.5625vw
+span.black
+    color: $textBlack
+    font-size: 1.0416666666666665vw
+
+span.gray
+    color: $textGray
+    font-size: 0.8333333333333334vw
+
+.part2_eff
+    grid-column-start: 2
+    grid-column-end: 12
+    grid-row-start: 3
+    grid-row-end: 4
+    max-height: 19.270833333333336vw
+    height: 19.270833333333336vw
+    display: flex
+    align-items: center
+    font-size: 1.821vw
+
+
+
+    // begin of ingredients block
+.ingredients
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 4
+    grid-row-end: 5
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 2vw 55.291666666666664vw 36.19791666666667vw
+    grid-column-gap: 20px
+    height: 93.48958333333334vw
+    max-height: 93.48958333333334vw
+
+.ingr_headline
+    display: flex
+    grid-column-start: 5
+    grid-column-end: -5
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.3vw
+    color: $textWhite
+
+.white_ingr
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    max-height: 55.291666666666664vw
+    height: 55.291666666666664vw
+    display: grid
+    grid-template-columns: repeat(24, 1fr)
+    grid-template-rows: repeat(24, 1fr)
+    z-index: 10
+
+
+.peptid
+    grid-column-start: 3
+    grid-column-end: 10
+    grid-row-start: 5
+    grid-row-end: 8
+    line-height: 1.5vw
+    z-index: 20
+
+.vitamin_C
+    grid-column-start: -8
+    grid-column-end: -1
+    grid-row-start: 11
+    grid-row-end: 14
+    margin-top: 1vw
+    line-height: 1.5vw
+    z-index: 20
+
+.termal_water
+    grid-column-start: 3
+    grid-column-end: 10
+    grid-row-start: 23
+    grid-row-end: 24
+    line-height: 1.5vw
+    z-index: 20
+
+
+
+.pict_ingr
+    grid-column-start: 5 
+    grid-column-end: -6
+    grid-row-start: 4
+    grid-row-end: -2
+    img
+        width: 52.1875vw
+#pngID
+    display: none
+
+.red_ingr
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 3
+    grid-row-end: 4
+    max-height: 36.19791666666667vw
+    height: 36.19791666666667vw
+    background: url(../img/redfon_ingr.jpg)
+    background-size: 100% auto
+    background-repeat: no-repeat
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 8.854166666666668vw 4.375vw 3.28125vw 5.520833333333333vw 5.104166666666667vw 9.010416666666666vw
+
+.safety
+    grid-column-start: 4
+    grid-column-end: 7
+    grid-row-start: 1
+    grid-row-end: 6
+    margin-left: -1.3vw
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 8.854166666666668vw 4.375vw 3.28125vw 5.520833333333333vw 5.104166666666667vw 9.010416666666666vw
+    span.free
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 1
+        grid-row-end: 2
+    span.red
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 2
+        grid-row-end: 3
+        font-size: 2.083333333333333vw
+    span.black
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 3
+        grid-row-end: 6
+        font-size: 1.5625vw
+    span.b1
+        grid-row-start: 3
+        grid-row-end: 4
+    span.b2
+        grid-row-start: 4
+        grid-row-end: 5
+    span.b3
+        grid-row-start: 5
+        grid-row-end: 6
+
+.applying
+    grid-column-start: 8
+    grid-column-end: 13
+    grid-row-start: 2
+    grid-row-end: 5
+    display: grid
+    color: $textWhite
+    padding-right: 4vw
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: 5.2vw 3.75vw 6.625vw
+    span.app_head
+        grid-column-start: 1
+        grid-column-end: 6
+        grid-row-start: 1
+        grid-row-end: 2
+        font-size: 2.083333333333333vw
+    span.app_text
+        grid-column-start: 1
+        grid-column-end: 6
+        grid-row-start: 2
+        grid-row-end: 5
+        font-size: 1.5625vw
+
+    // begin of cream_composition block
+.cream_composition
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 5
+    grid-row-end: 6
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: minmax(10px, auto)
+    grid-column-gap: 1.0416666666666665vw
+    // grid-row-gap: 2.8vw
+    max-height: 36.45833333333333vw
+    height: 36.45833333333333vw
+    margin-bottom: 7.187499999999999vw
+    background-image: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 35%, #e3e3e3 70%, #e3e3e3 100%)
+
+.comp_headline
+    display: flex
+    grid-column-start: 5
+    grid-column-end: -5
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.3vw
+    color: $textWhite
+
+.comp_text
+    display: flex
+    grid-column-start: 2
+    grid-column-end: 7
+    grid-row-start: 1
+    grid-row-end: 3
+    justify-content: center
+    align-items: center
+    color: $textBlack
+    font-size: 1.25vw
+
+.comp_pict
+    display: flex
+    grid-column-start: 8
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 3
+    justify-content: flex-end
+    img
+        width: 36.666666666666664vw
+
+
+    // begin of another_products block
+.another_products
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 6
+    grid-row-end: 7
+    display: grid
+    border-top: 0.15vw solid $mainRed
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 2vw 25vw 5vw
+    grid-column-gap: 1.0416666666666665vw
+    grid-row-gap: 2.8vw
+    height: 50vw
+    max-height: 50vw
+    br
+        display: none
+    
+.ap_headline
+    display: flex
+    grid-column-start: 3
+    grid-column-end: -3
+    grid-row-start: 1
+    grid-row-end: 2
+    height: 4vw
+    background: $mainRed
+    margin-top: -2vw
+    align-items: center
+    justify-content: center
+    font-size: 2.05vw
+    color: $textWhite
+
+.ap_1block
+    display: grid
+    grid-column-start: 1
+    grid-column-end: 6
+    grid-row-start: 2
+    grid-row-end: 3
+    background-image: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%)
+    max-height: 20.833333333333336vw
+    width: 35.15625vw
+    max-width: 35.15625vw
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 25vw
+    img
+        width: 21.125vw
+        height: 17.1875vw
+        margin-bottom: -3.4vw
+.ap_2block
+    display: grid
+    grid-column-start: -6
+    grid-column-end: -1
+    grid-row-start: 2
+    grid-row-end: 3
+    background-image: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%)
+    max-height: 20.833333333333336vw
+    width: 35.15625vw
+    max-width: 35.15625vw
+    margin-left: -1.0416666666666665vw
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 25vw
+    img
+        width: 23.125vw
+        height: 28.4375vw
+        margin-bottom: -3.4vw
+.ap-block-img
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 1
+    grid-row-end: 2
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+.ap-txt
+    display: flex
+    grid-row-start: 3
+    grid-row-end: 4
+    margin-top: 5.4vw
+    font-size: 1.25vw
+    justify-content: center
+    align-items: center
+    background: #fff
+    span.Vichy
+        font-weight: bold
+
+.ap-t1
+    grid-column-start: 2
+    grid-column-end: 6
+    margin-left: -2vw
+    padding-right: 2vw
+.ap-t2
+    grid-column-start: -6
+    grid-column-end: -1
+    padding-left: 4vw
+    padding-right: 6vw
+
+    
+        
