@@ -5,18 +5,18 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
+  width: 100vw;
   background: url(/img/14.png);
 }
 
 .wrapper {
-  width: 600px;
+  width: 100vw;
+  max-width: 600px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: 136.99px 205.48px 60px 40px 30px 770px 215px 48px;
-      grid-template-rows: 136.99px 205.48px 60px 40px 30px 770px 215px 48px;
 }
 
 header {
@@ -30,24 +30,35 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 136.99px;
+  max-height: 136.99px;
+  height: 22.83166666666667vw;
   background: url(/img/top-clouds.png) no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    background-size: 100vw;
+  }
 }
 
 header .head-logo {
   position: absolute;
-  width: 96px;
-  height: 21px;
-  left: 57.24px;
-  top: 10px;
+  max-width: 96px;
+  width: 16vw;
+  max-height: 21px;
+  height: 3.5000000000000004vw;
+  left: 9.54%;
+  top: 1.6666666666666667%;
 }
 
 header .head-tel {
   position: absolute;
-  width: 137px;
-  height: 21px;
-  left: 400.27px;
-  top: 10px;
+  max-width: 137px;
+  width: 22.833333333333332vw;
+  max-height: 21px;
+  height: 3.5000000000000004vw;
+  left: 66.71166666666667%;
+  top: 1.6666666666666667%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -58,6 +69,13 @@ header .head-tel {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 600px) {
+  header .head-tel {
+    font-size: 3vw;
+    line-height: 3.5000000000000004vw;
+  }
+}
+
 .recourse {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -65,28 +83,45 @@ header .head-tel {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
-  height: 205.48px;
+  max-height: 205.48px;
+  height: 34.24666666666666vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .recourse .rec-text {
-  width: 346px;
+  max-width: 346px;
+  width: 57.666666666666664vw;
 }
 
 .recourse .rec-text span, .recourse .rec-text p {
   margin-left: 59.73px;
 }
 
+@media screen and (max-width: 600px) {
+  .recourse .rec-text span, .recourse .rec-text p {
+    margin-left: 9.955vw;
+  }
+}
+
 .recourse .rec-text span {
-  width: 205px;
-  height: 21px;
+  max-width: 205px;
+  width: 34.166666666666664vw;
+  max-height: 21px;
+  height: 3.5000000000000004vw;
   /* 18 bold */
   font-family: Roboto;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media screen and (max-width: 600px) {
+  .recourse .rec-text span {
+    font-size: 3vw;
+    line-height: 3.5000000000000004vw;
+  }
 }
 
 .recourse .rec-text span #rec-name {
@@ -95,8 +130,10 @@ header .head-tel {
 }
 
 .recourse .rec-text p {
-  width: 276.27px;
-  height: 84px;
+  max-width: 276.27px;
+  max-height: 84px;
+  width: 46.044999999999995vw;
+  height: 14.000000000000002vw;
   /* 12 reg */
   font-family: Roboto;
   font-style: normal;
@@ -106,8 +143,16 @@ header .head-tel {
   color: #596868;
 }
 
+@media screen and (max-width: 600px) {
+  .recourse .rec-text p {
+    font-size: 2vw;
+    line-height: 2.3333333333333335vw;
+  }
+}
+
 .recourse .rec-photo {
-  width: 254px;
+  max-width: 254px;
+  width: 42.333333333333336vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,8 +165,10 @@ header .head-tel {
 }
 
 .recourse .rec-photo .dir-photo {
-  width: 194px;
-  height: 112px;
+  max-width: 194px;
+  max-height: 112px;
+  width: 32.33333333333333vw;
+  height: 18.666666666666668vw;
   background: radial-gradient(50% 50% at 50% 50%, #22ACFE 0%, #0B97E5 100%);
 }
 
@@ -135,8 +182,15 @@ header .head-tel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  max-height: 100px;
+  height: 16.666666666666664vw;
   background: url(/img/double-cloud.png) no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  .clouds {
+    background-size: 100vw;
+  }
 }
 
 .start-headline {
@@ -146,14 +200,16 @@ header .head-tel {
   -ms-grid-row: 4;
       grid-row-start: 4;
   grid-row-end: 6;
-  height: 70px;
+  max-height: 70px;
+  height: 11.666666666666666vw;
   background: -webkit-gradient(linear, left top, left bottom, from(#ECF7FA), to(rgba(233, 243, 246, 0)));
   background: linear-gradient(180deg, #ECF7FA 0%, rgba(233, 243, 246, 0) 100%);
   z-index: 99;
 }
 
 .start-headline h3 {
-  height: 21px;
+  max-height: 21px;
+  height: 3.5000000000000004vw;
   margin: 0 122px;
   /* 18 bold */
   font-family: Roboto;
@@ -165,6 +221,20 @@ header .head-tel {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .start-headline h3 {
+    margin: 0 20.333333333333332vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .start-headline h3 {
+    font-size: 3vw;
+    line-height: 3.5000000000000004vw;
+    margin-bottom: 1.6666666666666667vw;
+  }
+}
+
 .start-headline span {
   font-family: Roboto;
   font-style: normal;
@@ -173,6 +243,14 @@ header .head-tel {
   line-height: 14px;
   color: #596868;
   margin: 0px 117.5px;
+}
+
+@media screen and (max-width: 600px) {
+  .start-headline span {
+    font-size: 2vw;
+    line-height: 2.3333333333333335vw;
+    margin: 0 19.583333333333332vw;
+  }
 }
 
 .start {
@@ -191,11 +269,18 @@ header .head-tel {
   z-index: 100;
 }
 
+@media screen and (max-width: 600px) {
+  .start {
+    grid-column-gap: 3.3333333333333335vw;
+  }
+}
+
 .start .steps {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 11;
-  height: 109px;
+  max-height: 129px;
+  height: 21.5vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 6fr 2fr;
@@ -234,10 +319,18 @@ header .head-tel {
 }
 
 .start .st {
-  height: 109px;
-  width: 326px;
+  max-height: 109px;
+  max-width: 326px;
+  height: 18.166666666666668vw;
+  width: 54.333333333333336vw;
   margin-top: 10px;
   border: 1px solid #E0E0E0;
+}
+
+@media screen and (max-width: 600px) {
+  .start .st {
+    margin-top: 1.6666666666666667vw;
+  }
 }
 
 .start .st h4 {
@@ -248,6 +341,14 @@ header .head-tel {
   line-height: 16px;
   color: #040707;
   margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .start .st h4 {
+    margin: 1.6666666666666667vw;
+    font-size: 2.3333333333333335vw;
+    line-height: 2.666666666666667vw;
+  }
 }
 
 .start .st p {
@@ -263,6 +364,16 @@ header .head-tel {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .start .st p {
+    font-size: 2vw;
+    line-height: 2.3333333333333335vw;
+    margin-bottom: 1.6666666666666667vw;
+    margin-left: 1.6666666666666667vw;
+    margin-right: 1.6666666666666667vw;
+  }
+}
+
 .start .st a {
   font-family: Roboto;
   font-style: normal;
@@ -273,6 +384,15 @@ header .head-tel {
   color: #EF4662;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .start .st a {
+    font-size: 2vw;
+    line-height: 2.3333333333333335vw;
+    margin-left: 1.6666666666666667vw;
+    margin-right: 1.6666666666666667vw;
+  }
 }
 
 .start .step-text1 {
@@ -287,13 +407,24 @@ header .head-tel {
   height: 129px;
 }
 
+@media screen and (max-width: 600px) {
+  .start .si {
+    height: 21.5vw;
+  }
+}
+
 .start .step-img1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: si1;
-  height: 129px;
   background: url(/img/steps/step1.png) right center no-repeat;
   background-size: 72px 129px;
+}
+
+@media screen and (max-width: 600px) {
+  .start .step-img1 {
+    background-size: 12vw 21.5vw;
+  }
 }
 
 .start .step-text2 {
@@ -313,6 +444,12 @@ header .head-tel {
   background-size: 72px 129px;
 }
 
+@media screen and (max-width: 600px) {
+  .start .step-img2 {
+    background-size: 12vw 21.5vw;
+  }
+}
+
 .start .step-text3 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -327,6 +464,12 @@ header .head-tel {
   grid-area: si3;
   background: url(/img/steps/step3.png) right center no-repeat;
   background-size: 72px 129px;
+}
+
+@media screen and (max-width: 600px) {
+  .start .step-img3 {
+    background-size: 12vw 21.5vw;
+  }
 }
 
 .start .step-text4 {
@@ -346,6 +489,12 @@ header .head-tel {
   background-size: 72px 129px;
 }
 
+@media screen and (max-width: 600px) {
+  .start .step-img4 {
+    background-size: 12vw 21.5vw;
+  }
+}
+
 .start .step-text5 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -360,6 +509,12 @@ header .head-tel {
   grid-area: si5;
   background: url(/img/steps/step5.png) right center no-repeat;
   background-size: 72px 129px;
+}
+
+@media screen and (max-width: 600px) {
+  .start .step-img5 {
+    background-size: 12vw 21.5vw;
+  }
 }
 
 .start .step-text6 {
@@ -379,6 +534,12 @@ header .head-tel {
   background-size: 72px 129px;
 }
 
+@media screen and (max-width: 600px) {
+  .start .step-img6 {
+    background-size: 12vw 21.5vw;
+  }
+}
+
 .questions {
   position: relative;
   -ms-grid-column: 1;
@@ -387,13 +548,24 @@ header .head-tel {
   -ms-grid-row: 7;
       grid-row-start: 7;
   grid-row-end: 8;
+  max-height: 215px;
+  height: 35.833333333333336vw;
   background: url(/img/big-clouds.png) no-repeat;
+  background-size: 600px 215px;
+}
+
+@media screen and (max-width: 600px) {
+  .questions {
+    background-size: 100vw 35.833333333333336vw;
+  }
 }
 
 .questions h3 {
   position: absolute;
-  width: 479.42px;
-  height: 19px;
+  max-width: 479.42px;
+  width: 79.90333333333334vw;
+  max-height: 19px;
+  height: 3.166666666666667vw;
   left: 60.31px;
   top: 70px;
   margin: 0;
@@ -407,10 +579,21 @@ header .head-tel {
   color: #040707;
 }
 
+@media screen and (max-width: 600px) {
+  .questions h3 {
+    left: 10.051666666666668vw;
+    top: 11.666666666666666vw;
+    font-size: 2.666666666666667vw;
+    line-height: 3.166666666666667vw;
+  }
+}
+
 .questions span {
   position: absolute;
-  width: 346.25px;
-  height: 28px;
+  max-width: 346.25px;
+  max-height: 28px;
+  width: 57.70833333333333vw;
+  height: 4.666666666666667vw;
   left: 126.18px;
   top: 100px;
   /* 12 reg */
@@ -423,10 +606,21 @@ header .head-tel {
   color: #596868;
 }
 
+@media screen and (max-width: 600px) {
+  .questions span {
+    left: 21.03vw;
+    top: 16.666666666666664vw;
+    font-size: 2vw;
+    line-height: 2.3333333333333335vw;
+  }
+}
+
 .questions input {
   position: absolute;
-  width: 205px;
-  height: 31px;
+  max-width: 205px;
+  max-height: 31px;
+  width: 34.166666666666664vw;
+  height: 5.166666666666667vw;
   left: 197.52px;
   top: 143.21px;
   background: #EF4662;
@@ -434,6 +628,14 @@ header .head-tel {
   color: #fff;
   border: 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .questions input {
+    left: 32.92vw;
+    top: 23.868333333333336vw;
+    font-size: 2.4vw;
+  }
 }
 
 footer {
@@ -461,6 +663,17 @@ footer #tech {
   color: #596868;
 }
 
+@media screen and (max-width: 600px) {
+  footer #tech {
+    width: 23vw;
+    height: 4.666666666666667vw;
+    left: 9.978333333333333vw;
+    top: 1.6666666666666667vw;
+    font-size: 2vw;
+    line-height: 2.3333333333333335vw;
+  }
+}
+
 footer #links {
   position: absolute;
   width: 99px;
@@ -477,6 +690,17 @@ footer #links {
 footer #links a {
   color: #22ACFE;
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  footer #links {
+    width: 16.5vw;
+    height: 4.666666666666667vw;
+    left: 44.038333333333334vw;
+    top: 1.6666666666666667vw;
+    font-size: 2vw;
+    line-height: 2.3333333333333335vw;
+  }
 }
 
 footer .social {
@@ -497,8 +721,23 @@ footer .social a {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  footer .social {
+    width: 18.333333333333332vw;
+    height: 3.3333333333333335vw;
+    left: 71.62166666666667vw;
+    top: 1.6666666666666667vw;
+  }
+}
+
 footer .social .vk {
   background: url(/img/social/vk.png) no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  footer .social .vk {
+    background-size: 3.3333333333333335vw 3.3333333333333335vw;
+  }
 }
 
 footer .social .insta {
@@ -506,13 +745,34 @@ footer .social .insta {
   left: 90px;
 }
 
+@media screen and (max-width: 600px) {
+  footer .social .insta {
+    background-size: 3.3333333333333335vw 3.3333333333333335vw;
+    left: 15vw;
+  }
+}
+
 footer .social .twit {
   background: url(/img/social/twit.png) no-repeat;
   left: 60px;
 }
 
+@media screen and (max-width: 600px) {
+  footer .social .twit {
+    background-size: 3.3333333333333335vw 3.3333333333333335vw;
+    left: 10vw;
+  }
+}
+
 footer .social .fb {
   background: url(/img/social/fb.png) no-repeat;
   left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  footer .social .fb {
+    background-size: 3.3333333333333335vw 3.3333333333333335vw;
+    left: 5vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
