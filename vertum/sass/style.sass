@@ -5,6 +5,7 @@ $black: #000;
 $tabActive: #C1932C;
 $aboutBG: #F9F9F8;
 $guaranteeBG: #EEEDEA;
+$footerBG: #161616;
 body
     margin: 0 auto
     position: relative
@@ -197,7 +198,7 @@ ul.nav-links
             background: url(../img/prev-nArrow.png)
             background-size: 3.513909224011713vw 3.513909224011713vw
             position: absolute
-            left: 50vw
+            left: 49vw
             z-index: 99
             top: 35vw
         .prev:hover
@@ -460,8 +461,212 @@ ul.nav-links
     width: 100vw
     height: 25.329428989751097vw
     background: $aboutBG
-    
+    position: relative 
+    .headline
+        margin-left: 7.174231332357247vw
+        margin-top: 5.004231332357247vw
+        font-size: 1.7569546120058566vw
     .cli-slider
+        width: 100vw
+        margin-top: 3.004231332357247vw
+        .slick-list
+            margin: 0 5vw   
         .slide
-            width: 15vw
+            display: grid
+            width: 12.445095168374817vw
+            justify-content: center
+            align-items: center
+            img
+                width: 12.445095168374817vw
+                height: 7.320644216691069vw
+            h5
+                text-align: center
+                font-size: 1.0248901903367496vw
+                color: #807D76
+    .arrow
+        width: 3.513909224011713vw
+        height: 3.513909224011713vw
+        border: 0
+        outline: 0
+        cursor: pointer
+    .prev
+        background: url(../img/prev-cli-arr.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
+        position: absolute
+        left: 3.9vw
+        z-index: 99
+        top: 2vw
+    .prev:hover
+        background: url(../img/prev-arrow.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
+    .next
+        background: url(../img/next-cli-arr.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
+        position: absolute
+        right: 3.9vw
+        z-index: 99
+        top: 2vw
+    .next:hover
+        background: url(../img/next-arrow.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
+.feedbacks
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 7
+    grid-row-end: 8
+    width: 100vw
+    height: 39.82430453879942vw
+    position: relative 
+    .head
+        margin-top: 3vw
+        display: flex
+        position: relative
+        h3
+            margin-left: 7.174231332357247vw
+        a
+            display: block
+            position: absolute
+            top: 0.36603221083455345vw
+            right: 7.174231332357247vw
+            height: 2.9282576866764276vw
+            width: 9.224011713030746vw
+            border: 1px solid
+            border-radius: 1.5vw
+            text-align: center
+            line-height: 2.5vw
+            border-color: $tabActive
+            text-decoration: none
+            color: $black
+        a:hover
+            background: $tabActive
+            // border-color: $white
+            color: $white
+    .fdb-slider
+        height: 23.42606149341142vw        
+        margin-top: 3vw
+        width: 100vw
+        .slick-list
+            margin-right: 5.0134231332357247vw
+            margin-left: 7.174231332357247vw
+            height: 23.42606149341142vw 
+        .slide
+            height: 23.12606149341142vw
+            margin-right: 2.161932650073206vw
+            border: 1px solid #DAE3EB
+            border-radius: 4px
+            .fdb-text
+                padding: 2.342606149341142vw 2.342606149341142vw 1.7569546120058566vw 2.342606149341142vw
+            .fdb-author
+                padding-left: 2.342606149341142vw
+                display: grid
+                grid-template-columns: 4.685212298682284vw 30.600292825768665vw
+                .author-info
+                    margin-left: 1.7569546120058566vw
+                    h4
+                        margin-top: 0
+                        margin-bottom: 0.7vw
+                    span
+                        display: flex
+                        color: #ABABAB
+                        img
+                            margin-right: 1vw
+    .arrow
+        width: 3.513909224011713vw
+        height: 3.513909224011713vw
+        border: 0
+        outline: 0
+        cursor: pointer
+    .prev
+        background: url(../img/prev-cli-arr.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
+        position: absolute
+        left: 5vw
+        z-index: 99
+        top: 8.7vw
+    .prev:hover
+        background: url(../img/prev-arrow.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
+    .next
+        background: url(../img/next-cli-arr.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
+        position: absolute
+        right: 5vw
+        z-index: 99
+        top: 8.7vw
+    .next:hover
+        background: url(../img/next-arrow.png)
+        background-size: 3.513909224011713vw 3.513909224011713vw
 
+.our_sn
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 8
+    grid-row-end: 9
+    width: 85.65153733528551vw
+    height: 36.896046852122986vw
+    position: relative 
+    background: $aboutBG
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "head-sn head-sn head-sn" "vkSn fbSn okSn"
+    grid-column-gap: 2.1961932650073206vw
+    grid-row-gap: 2.9282576866764276vw
+    grid-template-rows: 7.027818448023426vw 21.08345534407028vw
+    padding-right:  7.174231332357247vw
+    padding-left: 7.174231332357247vw
+    .headline
+        grid-area: head-sn
+        display: grid
+        align-items: flex-end
+    .vk-sn
+        grid-area: vkSn
+    .fb-sn
+        grid-area: fbSn
+    .ok-sn
+        grid-area: okSn
+
+
+footer
+    grid-column-start: 1
+    grid-column-end: 13
+    grid-row-start: 9
+    grid-row-end: 10
+    width: 85.35871156661786vw
+    height: 27.81844802342606vw
+    position: relative 
+    background: $footerBG
+    display: grid
+    grid-template-columns: 19.765739385065885vw 19.765739385065885vw 39.53147877013177vw
+    grid-column-gap: 2.1961932650073206vw
+    padding-left: 7.320644216691069vw
+    padding-right: 7.320644216691069vw
+    color: $white
+    .contacts
+        margin-top: 4vw
+        color: $white
+    .company
+        margin-top: 4vw
+        ul
+            padding-inline-start: 0
+            li
+                list-style: none
+                a
+                    text-decoration: none
+                    color: $white                    
+    .services
+        margin-top: 4vw
+        .foot-serv-menu
+            display: flex
+        ul#first-foot
+            margin-right: 6vw
+        ul
+            padding-inline-start: 0            
+            li
+                list-style: none
+                a
+                    text-decoration: none
+                    color: $white
+    .headline
+        color: $tabActive
+
+    
