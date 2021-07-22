@@ -270,6 +270,15 @@ h1, h2, h3, h4, h5,
   font-size: 1.5rem; }
 .program img {
     width: 450px;}
+    @media (max-width: 988px) {
+      .program img {
+        width: 290px; } }
+    @media (max-width: 640px) {
+      .program img {
+        width: 80vw; } }
+    @media (max-width: 578px) {
+      .program img {
+        width: 90vw; } }
 .program .border-top {
   border-top: 1px solid #383b4f !important; }
 
