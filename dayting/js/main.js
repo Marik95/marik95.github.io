@@ -16,6 +16,10 @@ jQuery(document).ready(function($) {
 		  scrollTop: $($(this).attr('href')).offset().top
 		}, 700, 'linear');
 	  });
+	  $('.contact-btn').on('click', function(){
+		  $(this).toggleClass('active');
+		  $('ul.sticky-contacts_items').toggleClass('active');
+	  });
 	
 
 	var siteMenuClone = function() {

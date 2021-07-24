@@ -90,6 +90,109 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
 
+  .sticky-contacts
+  {
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 100000;
+  }
+  .sticky-contacts .contact-btn, .sticky-contacts .sticky-contacts_items .item
+  {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 50px;
+  }
+  .sticky-contacts .contact-btn
+  {
+    background: linear-gradient(to right, #60618a, #585f6f 70%);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .sticky-contacts .contact-btn span
+  {
+    background: url('../images/mess-icon.png');
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    background-size: contain;
+    transition: .5s;
+  }
+  .sticky-contacts .contact-btn.active span
+  {
+    background: url('../images/cancel.png');
+    transform: rotate(0.5turn);
+    background-size: contain;
+  }
+  .sticky-contacts .items_wrap
+  {
+    overflow: hidden;
+    border-radius: 50px;
+    transform: translateY(30px);
+    padding-bottom: 20px;
+  }
+  .sticky-contacts .sticky-contacts_items
+  {
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    transform: translateY(300px);
+    transition: .7s;
+  }
+  .sticky-contacts .sticky-contacts_items.active
+  {
+    transform: translateY(0px);
+  }
+  .sticky-contacts .sticky-contacts_items .item
+  {
+    /* background: #000; */
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sticky-contacts .sticky-contacts_items .item.viber
+  {
+    margin-bottom: 3px;
+  }
+  
+  .sticky-contacts .sticky-contacts_items .item.whatsapp a
+  {
+    background: url('../images/whatsapp.png');
+    background-size: cover;
+  }
+  .sticky-contacts .sticky-contacts_items .item.viber a
+  {
+    background: url('../images/viber.png');
+    background-size: cover;
+  }
+  .sticky-contacts .sticky-contacts_items .item.telegram a
+  {
+    background: url('../images/telegram.png');
+    background-size: 105%;
+    border-radius: 50px;
+    background-position: center;
+  }
+  .sticky-contacts .sticky-contacts_items .item a
+  {
+    transform: rotate(0.5turn);
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+  }
+  
+  .sticky-contacts .sticky-contacts_items.active .item a
+  {
+    transform: rotate(0turn);
+  }
+
 .site-section {
   padding: 2.5em 0; }
   @media (min-width: 768px) {
@@ -141,8 +244,8 @@ h1, h2, h3, h4, h5,
   padding: 4em 0;
   background: #1b1d24; }
   @media (min-width: 768px) {
-    .site-footer {
-      padding: 8em 0; } }
+    /* .site-footer {
+      padding: 8em 0; } */ } 
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
@@ -789,3 +892,19 @@ h1, h2, h3, h4, h5,
   width: 40px;
   height: 40px;
   line-height: 40px; }
+#contacts a.social
+{
+  color:#cfcfd1;
+}
+#contacts a.social:hover
+{
+  color:#fff;
+}
+
+footer a img {
+  height: 30px;
+  border-radius: 5px;
+}
+footer a img:hover {
+  background:#fff
+}
