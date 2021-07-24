@@ -100,6 +100,19 @@ h1, h2, h3, h4, h5,
     flex-direction: column-reverse;
     z-index: 100000;
   }
+  
+  @media (max-width: 968px) {
+    .sticky-contacts
+    {
+      right: 80px;
+    }
+  }
+  @media (max-width: 572px) {
+    .sticky-contacts
+    {
+      right: 120px;
+    }
+  }
   .sticky-contacts .contact-btn, .sticky-contacts .sticky-contacts_items .item
   {
     height: 50px;
